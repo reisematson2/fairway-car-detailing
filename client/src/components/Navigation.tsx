@@ -1,11 +1,26 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import OhioLogo from "@/assets/OhioLogo";
-import { Menu, X } from "lucide-react";
+import Logo from "@/assets/Logo";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 
 const Navigation = () => {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setServicesDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,16 +30,21 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const toggleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
+  };
+
   const isActive = (path: string) => {
     return location === path;
+  };
+
+  const isServicesActive = () => {
+    return ["/services", "/ceramic", "/ppf"].includes(location);
   };
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Ceramic", path: "/ceramic" },
-    { name: "PPF", path: "/ppf" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
@@ -34,13 +54,7 @@ const Navigation = () => {
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="h-12 w-12 mr-3">
-            <OhioLogo />
-          </div>
-          <div>
-            <h1 className="font-heading font-bold text-secondary text-lg">FAIRWAY DETAILING</h1>
-            <p className="text-primary text-xs font-medium">IT'S ALL ABOUT A CLEAN DRIVE</p>
-          </div>
+          <Logo className="h-12" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -56,9 +70,48 @@ const Navigation = () => {
               {link.name}
             </Link>
           ))}
-          <Link href="/booking" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md transition-colors">
-            Book Now
-          </Link>
+          
+          {/* Services Dropdown */}
+          <div className="relative" ref={dropdownRef}>
+            <button 
+              onClick={toggleServicesDropdown}
+              className={`font-heading font-semibold transition-colors flex items-center ${
+                isServicesActive() ? "text-primary" : "hover:text-primary"
+              }`}
+            >
+              Services <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {servicesDropdownOpen && (
+              <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md py-1 z-50">
+                <Link 
+                  href="/services" 
+                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
+                  onClick={() => setServicesDropdownOpen(false)}
+                >
+                  All Services
+                </Link>
+                <Link 
+                  href="/ceramic" 
+                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
+                  onClick={() => setServicesDropdownOpen(false)}
+                >
+                  Ceramic Coatings
+                </Link>
+                <Link 
+                  href="/ppf" 
+                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
+                  onClick={() => setServicesDropdownOpen(false)}
+                >
+                  Paint Protection Film
+                </Link>
+              </div>
+            )}
+          </div>
+          
+          <a href="tel:5551234567" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md transition-colors flex items-center">
+            <Phone className="mr-2 h-4 w-4" /> (555) 123-4567
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -87,13 +140,52 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Link 
-              href="/booking" 
-              className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md inline-block text-center transition-colors"
+            
+            {/* Services Menu Item */}
+            <div>
+              <button 
+                onClick={toggleServicesDropdown}
+                className={`font-heading font-semibold transition-colors flex items-center w-full text-left ${
+                  isServicesActive() ? "text-primary" : "hover:text-primary"
+                }`}
+              >
+                Services <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {servicesDropdownOpen && (
+                <div className="ml-4 mt-2 space-y-2">
+                  <Link 
+                    href="/services" 
+                    className={`block font-heading font-semibold ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
+                    onClick={closeMobileMenu}
+                  >
+                    All Services
+                  </Link>
+                  <Link 
+                    href="/ceramic" 
+                    className={`block font-heading font-semibold ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
+                    onClick={closeMobileMenu}
+                  >
+                    Ceramic Coatings
+                  </Link>
+                  <Link 
+                    href="/ppf" 
+                    className={`block font-heading font-semibold ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
+                    onClick={closeMobileMenu}
+                  >
+                    Paint Protection Film
+                  </Link>
+                </div>
+              )}
+            </div>
+            
+            <a 
+              href="tel:5551234567" 
+              className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md inline-flex items-center justify-center transition-colors"
               onClick={closeMobileMenu}
             >
-              Book Now
-            </Link>
+              <Phone className="mr-2 h-4 w-4" /> (555) 123-4567
+            </a>
           </div>
         </div>
       )}

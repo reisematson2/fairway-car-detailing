@@ -5,11 +5,10 @@ import Features from "@/components/Features";
 import TestimonialCard from "@/components/TestimonialCard";
 import BlogCard from "@/components/BlogCard";
 import ProcessStep from "@/components/ProcessStep";
-import BookingForm, { BookingContact } from "@/components/BookingForm";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone, Mail } from "lucide-react";
 
 const Home = () => {
   const processSteps = [
@@ -268,13 +267,50 @@ const Home = () => {
         </div>
       </section>
       
-      {/* CTA/Booking Section */}
-      <section id="booking-cta" className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 text-white">
-          <div className="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto">
-            <BookingContact />
-            <BookingForm />
-          </div>
+      {/* Contact CTA Section */}
+      <section id="contact-cta" className="py-16 bg-secondary">
+        <div className="container mx-auto px-4 text-white text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="font-heading text-3xl font-bold mb-4">Ready to Experience Premium Detailing?</h2>
+            <p className="text-xl mb-8">
+              Contact us today to discuss your vehicle's needs and schedule an appointment.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white bg-opacity-10 rounded-lg p-8">
+                <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
+                <h3 className="font-heading text-xl font-bold mb-2">Call Us</h3>
+                <p className="mb-4">Speak directly with our detailing experts</p>
+                <a href="tel:5551234567" className="text-primary hover:text-primary/90 font-heading font-bold text-xl">
+                  (555) 123-4567
+                </a>
+              </div>
+              
+              <div className="bg-white bg-opacity-10 rounded-lg p-8">
+                <Mail className="w-12 h-12 mx-auto mb-4 text-primary" />
+                <h3 className="font-heading text-xl font-bold mb-2">Email Us</h3>
+                <p className="mb-4">Send us your questions or service requests</p>
+                <a href="mailto:info@fairwaydetailing.com" className="text-primary hover:text-primary/90 font-heading font-bold">
+                  info@fairwaydetailing.com
+                </a>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <Link 
+                href="/contact" 
+                className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8 py-3 rounded-md transition-colors"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>

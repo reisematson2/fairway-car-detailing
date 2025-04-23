@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Redirect } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -12,7 +12,6 @@ import Ceramic from "@/pages/Ceramic";
 import PPF from "@/pages/PPF";
 import Blog from "@/pages/Blog";
 import Contact from "@/pages/Contact";
-import Booking from "@/pages/Booking";
 
 function Router() {
   return (
@@ -25,7 +24,9 @@ function Router() {
         <Route path="/ppf" component={PPF} />
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
-        <Route path="/booking" component={Booking} />
+        <Route path="/booking">
+          <Redirect to="/contact" />
+        </Route>
         <Route component={NotFound} />
       </Switch>
     </Layout>
