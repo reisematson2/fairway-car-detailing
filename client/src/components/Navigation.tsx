@@ -39,7 +39,7 @@ const Navigation = () => {
   };
 
   const isServicesActive = () => {
-    return ["/services", "/ceramic", "/ppf"].includes(location);
+    return ["/services", "/ceramic", "/ppf", "/liquid-wrap"].includes(location);
   };
 
   const navLinks = [
@@ -83,7 +83,7 @@ const Navigation = () => {
             </button>
             
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md py-1 z-50">
+              <div className="absolute top-full left-0 mt-1 w-52 bg-white shadow-lg rounded-md py-1 z-50">
                 <Link 
                   href="/services" 
                   className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
@@ -104,6 +104,13 @@ const Navigation = () => {
                   onClick={() => setServicesDropdownOpen(false)}
                 >
                   Paint Protection Film
+                </Link>
+                <Link 
+                  href="/liquid-wrap" 
+                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
+                  onClick={() => setServicesDropdownOpen(false)}
+                >
+                  Liquid Wrap
                 </Link>
               </div>
             )}
@@ -174,6 +181,13 @@ const Navigation = () => {
                     onClick={closeMobileMenu}
                   >
                     Paint Protection Film
+                  </Link>
+                  <Link 
+                    href="/liquid-wrap" 
+                    className={`block font-heading font-semibold ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
+                    onClick={closeMobileMenu}
+                  >
+                    Liquid Wrap
                   </Link>
                 </div>
               )}
