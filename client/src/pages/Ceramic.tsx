@@ -8,9 +8,9 @@ const Ceramic = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-ceramic-pattern bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center">
-          <div className="container mx-auto px-4 text-white">
+      <section className="bg-ceramic-pattern bg-cover bg-center">
+        <div className="bg-black bg-opacity-75">
+          <div className="container mx-auto px-4 text-white py-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ const Ceramic = () => {
       </section>
 
       {/* Our Ceramic Packages */}
-      <section className="py-16 bg-ceramic-pattern bg-cover bg-center">
+      <section className="bg-ceramic-pattern bg-cover bg-center">
         <div className="bg-black bg-opacity-75 py-16">
           <div className="container mx-auto px-4 text-white">
             <div className="text-center mb-12">
@@ -203,6 +203,7 @@ const Ceramic = () => {
                   description={pkg.description}
                   price={pkg.price}
                   features={pkg.features}
+                  bestFor={pkg.bestFor}
                   isPopular={pkg.isPopular}
                   index={index}
                 />

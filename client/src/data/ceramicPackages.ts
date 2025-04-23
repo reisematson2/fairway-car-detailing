@@ -4,6 +4,7 @@ export interface CeramicPackageType {
   description: string;
   price: string;
   features: string[];
+  bestFor: string;
   isPopular?: boolean;
 }
 
@@ -13,11 +14,13 @@ export const ceramicPackages: CeramicPackageType[] = [
     duration: "2-Year Protection",
     description: "Hydrophobic coating that enhances gloss and provides excellent water beading.",
     price: "$499",
+    bestFor: "Daily drivers looking for enhanced protection and easier maintenance",
     features: [
       "Full preparation & decontamination",
       "Single-stage polish",
       "Gtechniq EXO v5 coating",
-      "Wheel faces & glass coated"
+      "Wheel faces & glass coated",
+      "Entry-level professional protection"
     ]
   },
   {
@@ -25,6 +28,7 @@ export const ceramicPackages: CeramicPackageType[] = [
     duration: "5-Year Protection",
     description: "Professional dual-layer system for superior protection and durability.",
     price: "$899",
+    bestFor: "Enthusiasts who want premium, long-term protection with enhanced gloss",
     features: [
       "Full decontamination & enhancement",
       "Crystal Serum Light base layer",
@@ -39,6 +43,7 @@ export const ceramicPackages: CeramicPackageType[] = [
     duration: "7-Year Protection",
     description: "Our flagship ceramic system with industry-leading durability and gloss.",
     price: "$1,399",
+    bestFor: "Luxury & performance vehicles deserving the ultimate protection",
     features: [
       "Multi-stage paint correction",
       "Crystal Serum Ultra coating",
