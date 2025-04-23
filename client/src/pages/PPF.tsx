@@ -325,6 +325,8 @@ const PPF = () => {
                     title={pkg.title}
                     description={pkg.description}
                     price={pkg.price}
+                    filmType={pkg.filmType}
+                    filmDetails={pkg.filmDetails}
                     features={pkg.features}
                     isHighlighted={pkg.isHighlighted}
                     index={index}

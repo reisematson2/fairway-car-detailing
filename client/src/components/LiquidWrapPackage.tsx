@@ -1,28 +1,28 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Shield } from "lucide-react";
+import { Phone, Droplet } from "lucide-react";
 
-interface PPFPackageProps {
+interface LiquidWrapPackageProps {
   title: string;
   description: string;
   price: string;
-  filmType: string;
-  filmDetails: string;
+  productType: string;
+  productDetails: string;
   features: string[];
   isHighlighted?: boolean;
   index: number;
 }
 
-const PPFPackage = ({
+const LiquidWrapPackage = ({
   title,
   description,
   price,
-  filmType,
-  filmDetails,
+  productType,
+  productDetails,
   features,
   isHighlighted = false,
   index
-}: PPFPackageProps) => {
+}: LiquidWrapPackageProps) => {
   return (
     <motion.div 
       className="p-6 rounded-lg border border-gray-200 bg-white shadow-sm flex flex-col h-full"
@@ -47,29 +47,23 @@ const PPFPackage = ({
         
         <div className={`p-3 rounded-md mb-4 ${isHighlighted ? 'bg-primary bg-opacity-5' : 'bg-gray-50'}`}>
           <div className="flex items-start mb-2">
-            <Shield className={`h-5 w-5 mt-0.5 mr-2 ${isHighlighted ? 'text-primary' : 'text-gray-500'}`} />
+            <Droplet className={`h-5 w-5 mt-0.5 mr-2 ${isHighlighted ? 'text-primary' : 'text-gray-500'}`} />
             <div>
-              <p className="font-semibold">{filmType}</p>
-              <p className="text-sm text-gray-600">{filmDetails}</p>
+              <p className="font-semibold">{productType}</p>
+              <p className="text-sm text-gray-600">{productDetails}</p>
             </div>
           </div>
         </div>
         
-        <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-2 text-gray-500">Coverage Areas:</h4>
-        <div className="flex flex-wrap gap-2 mb-6">
+        <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-2 text-gray-500">Features:</h4>
+        <ul className="space-y-2 mb-6">
           {features.map((feature, i) => (
-            <span 
-              key={i} 
-              className={`text-xs font-medium px-2.5 py-1 rounded-full ${
-                isHighlighted 
-                  ? 'bg-primary bg-opacity-10 text-primary' 
-                  : 'bg-gray-100 text-gray-800'
-              }`}
-            >
-              {feature}
-            </span>
+            <li key={i} className="flex items-start">
+              <span className={`inline-block w-1.5 h-1.5 rounded-full mt-1.5 mr-2 ${isHighlighted ? 'bg-primary' : 'bg-gray-400'}`}></span>
+              <span className="text-gray-600">{feature}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
       
       <div className="mt-auto">
@@ -82,11 +76,11 @@ const PPFPackage = ({
           }`}
         >
           <Phone className="w-4 h-4 mr-2" />
-          <span>{price === "Contact Us" ? "Request a Quote" : "Contact For Pricing"}</span>
+          <span>Contact For Consultation</span>
         </Link>
       </div>
     </motion.div>
   );
 };
 
-export default PPFPackage;
+export default LiquidWrapPackage;

@@ -10,6 +10,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Ceramic from "@/pages/Ceramic";
 import PPF from "@/pages/PPF";
+import LiquidWrap from "@/pages/LiquidWrap";
 import Blog from "@/pages/Blog";
 import Contact from "@/pages/Contact";
 
@@ -22,6 +23,7 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/ceramic" component={Ceramic} />
         <Route path="/ppf" component={PPF} />
+        <Route path="/liquid-wrap" component={LiquidWrap} />
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
         <Route path="/booking">
