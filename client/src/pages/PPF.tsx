@@ -55,7 +55,7 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg" 
+                src="/images/FairwayPlaceholderImages/chris-barbalis-CWGLUO6PmtA-unsplash.jpg" 
                 alt="Paint Protection Film Installation" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
@@ -217,7 +217,7 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="@assets/images/leon-kohle-mxBHH7lhiCc-unsplash.jpg" 
+                src="/images/FairwayPlaceholderImages/leon-kohle-mxBHH7lhiCc-unsplash.jpg" 
                 alt="XPEL Ultimate Plus Film" 
                 className="w-full h-56 object-cover"
               />
@@ -254,7 +254,7 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="@assets/images/joshua-rodriguez-x6uI9XahGjA-unsplash.jpg" 
+                src="/images/FairwayPlaceholderImages/joshua-rodriguez-x6uI9XahGjA-unsplash.jpg" 
                 alt="XPEL Stealth Film" 
                 className="w-full h-56 object-cover"
               />
@@ -408,8 +408,8 @@ const PPF = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="@assets/images/pasqualino-capobianco-YnRrFhCmMZU-unsplash.jpg" alt="PPF Installation Process" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="@assets/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg" alt="PPF Installation Detail" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="/images/FairwayPlaceholderImages/pasqualino-capobianco-YnRrFhCmMZU-unsplash.jpg" alt="PPF Installation Process" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="/images/FairwayPlaceholderImages/eduardo-almeida-LXd8WJ357ls-unsplash.jpg" alt="PPF Installation Detail" className="rounded-lg shadow-md w-full h-auto object-cover" />
                 </div>
               </motion.div>
             </div>

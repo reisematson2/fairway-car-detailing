@@ -85,19 +85,19 @@ html {
 }
 
 .bg-hero-pattern {
-  background-image: url('@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg');
+  background-image: url('/images/FairwayPlaceholderImages/chris-hardy-qtygLvwYNYE-unsplash.jpg');
 }
 
 .bg-ceramic-pattern {
-  background-image: url('@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg');
+  background-image: url('/images/FairwayPlaceholderImages/deniz-demirci-8kaGBtXl4do-unsplash.jpg');
 }
 
 .bg-ppf-pattern {
-  background-image: url('@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg');
+  background-image: url('/images/FairwayPlaceholderImages/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg');
 }
 
 .bg-liquid-wrap-pattern {
-  background-image: url('@assets/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg');
+  background-image: url('/images/FairwayPlaceholderImages/eduardo-almeida-LXd8WJ357ls-unsplash.jpg');
 }
 
 .service-tab.active {

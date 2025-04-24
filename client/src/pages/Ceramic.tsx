@@ -55,7 +55,7 @@ const Ceramic = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="@assets/images/iwin-EoTNE15v0qs-unsplash.jpg" 
+                src="/images/FairwayPlaceholderImages/iwin-EoTNE15v0qs-unsplash.jpg" 
                 alt="Ceramic Coating Application" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
@@ -304,9 +304,9 @@ const Ceramic = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="@assets/images/steve-pancrate-0p_31VwkokY-unsplash.jpg" alt="Washing Car" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="@assets/images/steve-pancrate-TsW5wvJzChE-unsplash.jpg" alt="Paint Correction" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="@assets/images/steve-pancrate-tVkk8MbcJCg-unsplash.jpg" alt="Coating Application" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="/images/FairwayPlaceholderImages/steve-pancrate-0p_31VwkokY-unsplash.jpg" alt="Washing Car" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="/images/FairwayPlaceholderImages/steve-pancrate-TsW5wvJzChE-unsplash.jpg" alt="Paint Correction" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="/images/FairwayPlaceholderImages/steve-pancrate-tVkk8MbcJCg-unsplash.jpg" alt="Coating Application" className="rounded-lg shadow-md w-full h-auto object-cover" />
                 </div>
               </motion.div>
             </div>
