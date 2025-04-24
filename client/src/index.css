@@ -85,7 +85,7 @@ html {
 }
 
 .bg-hero-pattern {
-  background-image: url('https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-image: url('https://images.unsplash.com/photo-1635073908681-69d2e4c4e974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
 }
 
 .bg-ceramic-pattern {
@@ -94,6 +94,10 @@ html {
 
 .bg-ppf-pattern {
   background-image: url('https://images.unsplash.com/photo-1632458013703-dec14e9ad456?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+}
+
+.bg-liquidwrap-pattern {
+  background-image: url('https://images.unsplash.com/photo-1623007849299-3c048a2e8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
 }
 
 .service-tab.active {
