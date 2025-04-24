@@ -85,15 +85,19 @@ html {
 }
 
 .bg-hero-pattern {
-  background-image: url('https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-image: url('@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg');
 }
 
 .bg-ceramic-pattern {
-  background-image: url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-image: url('@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg');
 }
 
 .bg-ppf-pattern {
-  background-image: url('https://images.unsplash.com/photo-1527247043589-98e6ac08f56c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-image: url('@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg');
+}
+
+.bg-liquid-wrap-pattern {
+  background-image: url('@assets/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg');
 }
 
 .service-tab.active {
