@@ -3,6 +3,9 @@ import { Link } from "wouter";
 import { ppfPackages } from "@/data/ppfPackages";
 import PPFPackage from "@/components/PPFPackage";
 import { ArrowRight, Check } from "lucide-react";
+import ppfImage1 from "@assets/images/d-daniel-raj-XVN7YsyW-Hw-unsplash.jpg";
+import ppfImage2 from "@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg";
+import ppfImage3 from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
 
 const PPF = () => {
   return (
@@ -408,8 +411,9 @@ const PPF = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PPF Installation Process" className="rounded-lg shadow-md" />
-                  <img src="https://images.unsplash.com/photo-1621087885817-2ed9f4dfe004?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PPF Installation Detail" className="rounded-lg shadow-md" />
+                  <img src={ppfImage1} alt="PPF Installation Process" className="rounded-lg shadow-md" />
+                  <img src={ppfImage2} alt="PPF Installation Detail" className="rounded-lg shadow-md" />
+                  <img src={ppfImage3} alt="PPF Final Result" className="rounded-lg shadow-md" />
                 </div>
               </motion.div>
             </div>

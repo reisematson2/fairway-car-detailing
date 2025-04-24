@@ -4,6 +4,10 @@ import { Link } from "wouter";
 import { services, addons } from "@/data/services";
 import ServicePackage from "@/components/ServicePackage";
 import { ArrowRight } from "lucide-react";
+import carWashing from "@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg";
+import paintCorrection from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import interiorCleaning from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import finalResult from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("standard");
@@ -182,10 +186,10 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1536364127590-1594e3161294?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1609097828576-3b620e86039e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1560250146-58ac9d9e5e73?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Cleaning" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1586803845608-08494a4bbc6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Final Result" className="rounded-lg h-48 w-full object-cover" />
+                <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
+                <img src={paintCorrection} alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
+                <img src={interiorCleaning} alt="Interior Cleaning" className="rounded-lg h-48 w-full object-cover" />
+                <img src={finalResult} alt="Final Result" className="rounded-lg h-48 w-full object-cover" />
               </div>
             </motion.div>
           </div>

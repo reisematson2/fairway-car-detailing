@@ -9,6 +9,8 @@ import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
 import { ArrowRight, Phone, Mail } from "lucide-react";
+import detailingProcess from "@assets/images/farouk-elwareth-ybbHxRwbY3Y-unsplash.jpg";
+import carWashing from "@assets/images/fred-heap-flCqE72NqT0-unsplash.jpg";
 
 const Home = () => {
   const processSteps = [
@@ -76,8 +78,8 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1635260087427-8f3e73872c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1552549505-e4221001095e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
+                <img src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" />
+                <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
                 <img src="https://images.unsplash.com/photo-1600709406925-ef2049e82151?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
                 <img src="https://images.unsplash.com/photo-1625895197185-efcec01cffe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
               </div>
