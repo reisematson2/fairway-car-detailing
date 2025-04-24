@@ -52,9 +52,10 @@ const Navigation = () => {
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
+        {/* Logo and Company Name */}
+        <Link href="/" className="flex items-center gap-3">
           <Logo className="h-12" />
+          <span className="font-heading font-bold text-xl hidden sm:block">Fairway Car Detailing</span>
         </Link>
 
         {/* Desktop Navigation */}
