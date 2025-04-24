@@ -114,7 +114,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1509711075561-55c3f8513c4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    imageSrc: "https://images.unsplash.com/photo-1636458938709-0666e6eba8b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
