@@ -13,7 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-4">Premium Auto Detailing in Ohio</h1>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-4">It's All About a Clean Drive</h1>
             <p className="text-xl mb-6">Professional detailing services that protect your investment and keep your vehicle looking showroom-new.</p>
             
             <div className="mb-8">
