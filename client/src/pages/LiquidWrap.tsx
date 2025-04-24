@@ -3,6 +3,9 @@ import { Link } from "wouter";
 import LiquidWrapPackage from "@/components/LiquidWrapPackage";
 import { liquidWrapPackages, liquidWrapBenefits } from "@/data/liquidWrapPackages";
 import { Check, Phone } from "lucide-react";
+import liquidWrap1 from "@assets/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg";
+import liquidWrap2 from "@assets/images/erik-mclean-_ysKxphTc10-unsplash.jpg";
+import liquidWrap3 from "@assets/images/erik-mclean-Q9f1YJvTa3I-unsplash.jpg";
 
 const LiquidWrap = () => {
   return (
@@ -208,9 +211,9 @@ const LiquidWrap = () => {
 
           <div className="mt-10 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src={liquidWrap1} alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src={liquidWrap2} alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src={liquidWrap3} alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
               <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Satin Finish" className="rounded-lg h-40 w-full object-cover" />
             </div>
           </div>
