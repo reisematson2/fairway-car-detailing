@@ -76,10 +76,10 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1635260087427-8f3e73872c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1552549505-e4221001095e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1600709406925-ef2049e82151?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1625895197185-efcec01cffe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ceramic Coating Application" className="rounded-lg h-48 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1621066946284-f1682fba0bdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Professional Detailing" className="rounded-lg h-48 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1635765318027-3d497db17045?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Polishing" className="rounded-lg h-48 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
               </div>
             </motion.div>
           </div>
