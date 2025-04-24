@@ -55,9 +55,9 @@ const Ceramic = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="/images/iwin-EoTNE15v0qs-unsplash.jpg" 
+                src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Ceramic Coating Application" 
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </motion.div>
           </div>
@@ -304,9 +304,9 @@ const Ceramic = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="/images/steve-pancrate-0p_31VwkokY-unsplash.jpg" alt="Washing Car" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="/images/steve-pancrate-TsW5wvJzChE-unsplash.jpg" alt="Paint Correction" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="/images/steve-pancrate-tVkk8MbcJCg-unsplash.jpg" alt="Coating Application" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="https://images.unsplash.com/photo-1636099871190-e9805a4e4857?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Washing Car" className="rounded-lg shadow-md w-full h-auto" />
+                  <img src="https://images.unsplash.com/photo-1635342219231-b921407e1c24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paint Correction" className="rounded-lg shadow-md w-full h-auto" />
+                  <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coating Application" className="rounded-lg shadow-md w-full h-auto" />
                 </div>
               </motion.div>
             </div>

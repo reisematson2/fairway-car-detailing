@@ -55,9 +55,9 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg" 
+                src="https://images.unsplash.com/photo-1611821658059-b17c7d097454?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Paint Protection Film Installation" 
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </motion.div>
           </div>
@@ -217,7 +217,7 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="/images/leon-kohle-mxBHH7lhiCc-unsplash.jpg" 
+                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="XPEL Ultimate Plus Film" 
                 className="w-full h-56 object-cover"
               />
@@ -254,7 +254,7 @@ const PPF = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="/images/joshua-rodriguez-x6uI9XahGjA-unsplash.jpg" 
+                src="https://images.unsplash.com/photo-1606577924006-27637bca2e0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="XPEL Stealth Film" 
                 className="w-full h-56 object-cover"
               />
@@ -408,8 +408,8 @@ const PPF = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="/images/pasqualino-capobianco-YnRrFhCmMZU-unsplash.jpg" alt="PPF Installation Process" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg" alt="PPF Installation Detail" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PPF Installation Process" className="rounded-lg shadow-md" />
+                  <img src="https://images.unsplash.com/photo-1621087885817-2ed9f4dfe004?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PPF Installation Detail" className="rounded-lg shadow-md" />
                 </div>
               </motion.div>
             </div>

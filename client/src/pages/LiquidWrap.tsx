@@ -8,7 +8,7 @@ const LiquidWrap = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-liquid-wrap-pattern bg-cover bg-center">
+      <section className="bg-gradient-to-r from-indigo-700 to-purple-800">
         <div className="bg-black bg-opacity-50">
           <div className="container mx-auto px-4 text-white py-24">
             <motion.div
@@ -55,9 +55,9 @@ const LiquidWrap = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="@assets/images/erik-mclean-Q9f1YJvTa3I-unsplash.jpg" 
+                src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Liquid Wrap Application" 
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </motion.div>
           </div>
@@ -208,10 +208,10 @@ const LiquidWrap = () => {
 
           <div className="mt-10 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <img src="@assets/images/neerob-raihan-iC4Yr60shv4-unsplash.jpg" alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="@assets/images/fred-heap-flCqE72NqT0-unsplash.jpg" alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg" alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="@assets/images/mei-ling-mirow-0qmAO6F3XTg-unsplash.jpg" alt="Satin Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Satin Finish" className="rounded-lg h-40 w-full object-cover" />
             </div>
           </div>
         </div>
@@ -338,8 +338,8 @@ const LiquidWrap = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="@assets/images/erik-mclean-_ysKxphTc10-unsplash.jpg" alt="Liquid Wrap Application Process" className="rounded-lg shadow-md w-full h-auto object-cover" />
-                  <img src="@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg" alt="Liquid Wrap Detail" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                  <img src="https://images.unsplash.com/photo-1626060893257-2ebbf5139e57?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Application Process" className="rounded-lg shadow-md w-full h-auto" />
+                  <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Detail" className="rounded-lg shadow-md w-full h-auto" />
                 </div>
               </motion.div>
             </div>
