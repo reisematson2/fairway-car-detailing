@@ -8,9 +8,9 @@ const LiquidWrap = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-liquidwrap-pattern bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center">
-          <div className="container mx-auto px-4 text-white">
+      <section className="bg-gradient-to-r from-indigo-700 to-purple-800">
+        <div className="bg-black bg-opacity-50">
+          <div className="container mx-auto px-4 text-white py-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ const LiquidWrap = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1587900437942-8758241767ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Liquid Wrap Application" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -208,10 +208,10 @@ const LiquidWrap = () => {
 
           <div className="mt-10 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d159?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1514867644123-6385d58d3cd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1603553329474-99f95f35394f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
-              <img src="https://images.unsplash.com/photo-1619726578880-0760c6a68753?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Satin Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gloss Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Matte Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Metallic Finish" className="rounded-lg h-40 w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Satin Finish" className="rounded-lg h-40 w-full object-cover" />
             </div>
           </div>
         </div>
@@ -338,8 +338,8 @@ const LiquidWrap = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="https://images.unsplash.com/photo-1593353798398-a728055fae81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Application Process" className="rounded-lg shadow-md w-full h-auto" />
-                  <img src="https://images.unsplash.com/photo-1629785235171-a19f36effbef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Detail" className="rounded-lg shadow-md w-full h-auto" />
+                  <img src="https://images.unsplash.com/photo-1626060893257-2ebbf5139e57?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Application Process" className="rounded-lg shadow-md w-full h-auto" />
+                  <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Detail" className="rounded-lg shadow-md w-full h-auto" />
                 </div>
               </motion.div>
             </div>
