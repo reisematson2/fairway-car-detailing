@@ -411,9 +411,9 @@ const PPF = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src={ppfImage1} alt="PPF Installation Process" className="rounded-lg shadow-md" />
-                  <img src={ppfImage2} alt="PPF Installation Detail" className="rounded-lg shadow-md" />
-                  <img src={ppfImage3} alt="PPF Final Result" className="rounded-lg shadow-md" />
+                  <img src={ppfImage1} alt="PPF Installation Process" className="rounded-lg shadow-md h-48 w-full object-cover" />
+                  <img src={ppfImage2} alt="PPF Installation Detail" className="rounded-lg shadow-md h-48 w-full object-cover" />
+                  <img src={ppfImage3} alt="PPF Final Result" className="rounded-lg shadow-md h-48 w-full object-cover" />
                 </div>
               </motion.div>
             </div>

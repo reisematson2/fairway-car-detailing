@@ -11,6 +11,8 @@ import { blogPosts } from "@/data/blogPosts";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import detailingProcess from "@assets/images/farouk-elwareth-ybbHxRwbY3Y-unsplash.jpg";
 import carWashing from "@assets/images/fred-heap-flCqE72NqT0-unsplash.jpg";
+import mercedes from "@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg";
+import interior from "@assets/images/andre-mouton-8X0v2g1x4aE-unsplash.jpg";
 
 const Home = () => {
   const processSteps = [
@@ -52,7 +54,7 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-heading text-3xl font-bold mb-4">About Fairway Detailing</h2>
+                <h2 className="font-heading text-3xl font-bold mb-4">About Fairway Detailing Test</h2>
                 <p className="text-gray-600 mb-6">
                   Fairway Detailing Company is Ohio's premier auto detailing service, dedicated to providing exceptional care for your vehicle. We combine industry-leading products with meticulous attention to detail to deliver results that exceed expectations.
                 </p>
@@ -80,8 +82,8 @@ const Home = () => {
               <div className="grid grid-cols-2 gap-4">
                 <img src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" />
                 <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1600709406925-ef2049e82151?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1625895197185-efcec01cffe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
+                <img src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
+                <img src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
               </div>
             </motion.div>
           </div>

@@ -5,7 +5,6 @@ export interface PPFPackageType {
   filmType: string;
   filmDetails: string;
   features: string[];
-  isHighlighted?: boolean;
 }
 
 export const ppfPackages: PPFPackageType[] = [
@@ -23,8 +22,7 @@ export const ppfPackages: PPFPackageType[] = [
     price: "From $1,599",
     filmType: "XPEL Ultimate Plus",
     filmDetails: "10-year warranty, self-healing technology",
-    features: ["Full Hood", "Full Fenders", "Full Front Bumper", "Headlights", "Side Mirrors"],
-    isHighlighted: true
+    features: ["Full Hood", "Full Fenders", "Full Front Bumper", "Headlights", "Side Mirrors"]
   },
   {
     title: "Track Package",

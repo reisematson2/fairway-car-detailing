@@ -5,22 +5,22 @@ import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, ArrowRight } from "l
 const About = () => {
   const teamMembers = [
     {
-      name: "John Davis",
+      name: "Member 1",
       position: "Founder & Head Detailer",
-      bio: "With over 15 years of experience in automotive detailing, John founded Fairway Detailing with a vision to provide exceptional service to car enthusiasts in Ohio.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      bio: "With over 15 years of experience in automotive detailing, Member 1 founded Fairway Detailing with a vision to provide exceptional service to car enthusiasts in Ohio.",
+      image: ""
     },
     {
-      name: "Sarah Johnson",
+      name: "Member 2",
       position: "Ceramic Coating Specialist",
-      bio: "Sarah is our certified ceramic coating expert with specialized training in Gtechniq applications. She's known for her meticulous prep work and flawless coating results.",
-      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      bio: "Member 2 is our certified ceramic coating expert with specialized training in Gtechniq applications. He's known for her meticulous prep work and flawless coating results.",
+      image: ""
     },
     {
-      name: "Michael Rodriguez",
+      name: "Member 3",
       position: "Paint Protection Expert",
-      bio: "Michael specializes in PPF installation and is certified by XPEL. His precision cutting and installation techniques ensure seamless protection for your vehicle.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      bio: "Member 3 specializes in PPF installation and is certified by XPEL. His precision cutting and installation techniques ensure seamless protection for your vehicle.",
+      image: ""
     }
   ];
 
