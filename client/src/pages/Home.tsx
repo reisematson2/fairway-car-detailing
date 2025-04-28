@@ -9,10 +9,10 @@ import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
 import { ArrowRight, Phone, Mail } from "lucide-react";
-import detailingProcess from "@assets/images/farouk-elwareth-ybbHxRwbY3Y-unsplash.jpg";
-import carWashing from "@assets/images/fred-heap-flCqE72NqT0-unsplash.jpg";
-import mercedes from "@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg";
-import interior from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import detailingProcess from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import carWashing from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
+import mercedes from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import interior from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
 
 const Home = () => {
   const processSteps = [

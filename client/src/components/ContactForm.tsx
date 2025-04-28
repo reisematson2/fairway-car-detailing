@@ -51,10 +51,10 @@ const ContactInfo = () => {
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, href: "#" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#" },
-    { icon: <Youtube className="w-5 h-5" />, href: "#" }
+    { icon: <Facebook className="w-5 h-5 text-white" />, href: "#" },
+    { icon: <Instagram className="w-5 h-5 text-white" />, href: "#" },
+    { icon: <Twitter className="w-5 h-5 text-white" />, href: "#" },
+    { icon: <Youtube className="w-5 h-5 text-white" />, href: "#" }
   ];
 
   return (

@@ -4,10 +4,10 @@ import { Link } from "wouter";
 import { services, addons } from "@/data/services";
 import ServicePackage from "@/components/ServicePackage";
 import { ArrowRight } from "lucide-react";
-import carWashing from "@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg";
-import paintCorrection from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
-import interiorCleaning from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
-import finalResult from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
+import carWashing from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import paintCorrection from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
+import interiorCleaning from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import finalResult from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("standard");

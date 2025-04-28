@@ -3,9 +3,9 @@ import { Link } from "wouter";
 import LiquidWrapPackage from "@/components/LiquidWrapPackage";
 import { liquidWrapPackages, liquidWrapBenefits } from "@/data/liquidWrapPackages";
 import { Check, Phone } from "lucide-react";
-import liquidWrap1 from "@assets/images/eduardo-almeida-LXd8WJ357ls-unsplash.jpg";
-import liquidWrap2 from "@assets/images/erik-mclean-_ysKxphTc10-unsplash.jpg";
-import liquidWrap3 from "@assets/images/erik-mclean-Q9f1YJvTa3I-unsplash.jpg";
+import liquidWrap1 from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import liquidWrap2 from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
+import liquidWrap3 from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
 
 const LiquidWrap = () => {
   return (

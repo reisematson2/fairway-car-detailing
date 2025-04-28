@@ -3,9 +3,9 @@ import { Link } from "wouter";
 import { ppfPackages } from "@/data/ppfPackages";
 import PPFPackage from "@/components/PPFPackage";
 import { ArrowRight, Check } from "lucide-react";
-import ppfImage1 from "@assets/images/d-daniel-raj-XVN7YsyW-Hw-unsplash.jpg";
-import ppfImage2 from "@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg";
-import ppfImage3 from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
+import ppfImage1 from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
+import ppfImage2 from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
+import ppfImage3 from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
 
 const PPF = () => {
   return (
