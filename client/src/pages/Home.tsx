@@ -12,7 +12,7 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 import detailingProcess from "@assets/images/farouk-elwareth-ybbHxRwbY3Y-unsplash.jpg";
 import carWashing from "@assets/images/fred-heap-flCqE72NqT0-unsplash.jpg";
 import mercedes from "@assets/images/alexander-zaytsev-b1cUCFU-tFA-unsplash.jpg";
-import interior from "@assets/images/andre-mouton-8X0v2g1x4aE-unsplash.jpg";
+import interior from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
 
 const Home = () => {
   const processSteps = [
