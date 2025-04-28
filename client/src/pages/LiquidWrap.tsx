@@ -6,14 +6,16 @@ import { Check, Phone } from "lucide-react";
 import liquidWrap1 from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
 import liquidWrap2 from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 import liquidWrap3 from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import heroBackground from "@assets/images/steve-pancrate-tVkk8MbcJCg-unsplash.jpg"
+import packagesBackground from "@assets/images/neerob-raihan-iC4Yr60shv4-unsplash.jpg"
 
 const LiquidWrap = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-700 to-purple-800">
-        <div className="bg-black bg-opacity-50">
-          <div className="container mx-auto px-4 text-white py-24">
+      <section className="relative h-[50vh] bg-cover bg-center" style={{ backgroundImage: `url(${heroBackground})` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+          <div className="container mx-auto px-4 text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -221,7 +223,7 @@ const LiquidWrap = () => {
       </section>
 
       {/* Our Liquid Wrap Packages */}
-      <section className="py-16 bg-gradient-to-r from-indigo-700 to-purple-800">
+      <section className="bg-cover bg-center" style={{ backgroundImage: `url(${packagesBackground})` }}>
         <div className="bg-black bg-opacity-75 py-16">
           <div className="container mx-auto px-4 text-white">
             <div className="text-center mb-12">
@@ -233,11 +235,11 @@ const LiquidWrap = () => {
               >
                 <h2 className="font-heading text-3xl font-bold mb-4">Liquid Wrap Packages</h2>
                 <p className="max-w-3xl mx-auto">
-                  Choose the perfect package for your vehicle transformation
+                  Choose the perfect package for your vehicle transformation.
                 </p>
               </motion.div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {liquidWrapPackages.map((pkg, index) => (
                 <LiquidWrapPackage
@@ -248,12 +250,12 @@ const LiquidWrap = () => {
                   productType={pkg.productType}
                   productDetails={pkg.productDetails}
                   features={pkg.features}
-                  isHighlighted={pkg.isHighlighted}
+                  isHighlighted={false}
                   index={index}
                 />
               ))}
             </div>
-            
+
             <div className="mt-12 text-center">
               <Link href="/contact" className="inline-flex items-center bg-white text-primary hover:bg-gray-100 font-heading font-semibold px-6 py-3 rounded-md transition-colors">
                 <Phone className="w-4 h-4 mr-2" />
