@@ -5,8 +5,8 @@ const Features = () => {
   const featureItems = [
     {
       icon: <Car className="text-white text-2xl" />,
-      title: "Professional Detailing",
-      description: "Our expert team uses premium products and proven techniques to deliver exceptional results."
+      title: "Mobile Detailing",
+      description: "We come to you! Our mobile service brings professional detailing directly to your location."
     },
     {
       icon: <Shield className="text-white text-2xl" />,

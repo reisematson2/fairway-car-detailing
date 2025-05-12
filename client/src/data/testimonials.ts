@@ -19,7 +19,7 @@ export const testimonials: TestimonialType[] = [
     rating: 5
   },
   {
-    content: "I was amazed at how they transformed my 10-year-old car. The Elite Package was worth every penny. The interior looks and smells like new, and the paint has a depth I've never seen before.",
+    content: "I was amazed at how they transformed my 10-year-old car. The Showroom Detail was worth every penny. The interior looks and smells like new, and the paint has a depth I've never seen before.",
     author: "David L.",
     location: "Cleveland, OH",
     rating: 5

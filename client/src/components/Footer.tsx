@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-400 mb-6">
-              Providing premium auto detailing services throughout Ohio.
+              Ohio's one-stop shop for mobile detailing services. We come to you!
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
               <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
               <li><Link href="/ceramic" className="text-gray-400 hover:text-white transition-colors">Ceramic Coatings</Link></li>
               <li><Link href="/ppf" className="text-gray-400 hover:text-white transition-colors">Paint Protection Film</Link></li>
-              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Car Blog</Link></li>
+              <li><Link href="/before-after" className="text-gray-400 hover:text-white transition-colors">Before/After</Link></li>
             </ul>
           </div>
 
@@ -40,9 +40,9 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">Our Services</h4>
             <ul className="space-y-2">
-              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Standard Detailing</Link></li>
-              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Deluxe Detailing</Link></li>
-              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Elite Detailing</Link></li>
+              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Essential Detail</Link></li>
+              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Premium Refresh</Link></li>
+              <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Showroom Detail</Link></li>
               <li><Link href="/ceramic" className="text-gray-400 hover:text-white transition-colors">Ceramic Coatings</Link></li>
               <li><Link href="/ppf" className="text-gray-400 hover:text-white transition-colors">Paint Protection Film</Link></li>
               <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Add-on Services</Link></li>

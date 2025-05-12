@@ -140,9 +140,9 @@ const BookingForm = () => {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="standard">Standard Package</SelectItem>
-                      <SelectItem value="deluxe">Deluxe Package</SelectItem>
-                      <SelectItem value="elite">Elite Package</SelectItem>
+                      <SelectItem value="standard">Essential Detail</SelectItem>
+                      <SelectItem value="deluxe">Premium Refresh</SelectItem>
+                      <SelectItem value="elite">Showroom Detail</SelectItem>
                       <SelectItem value="ceramic">Ceramic Coating</SelectItem>
                       <SelectItem value="ppf">Paint Protection Film</SelectItem>
                       <SelectItem value="other">Other/Custom</SelectItem>

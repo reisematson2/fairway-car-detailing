@@ -59,6 +59,10 @@ const ContactInfo = () => {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
+      <div className="bg-primary text-white p-3 rounded-lg mb-6 text-center">
+        <h3 className="font-heading font-bold text-xl">We come to you!</h3>
+        <p className="mt-1 text-sm">Save time with our convenient mobile detailing service</p>
+      </div>
       <h3 className="font-heading font-bold text-xl mb-6">Get In Touch</h3>
       
       <div className="space-y-4">

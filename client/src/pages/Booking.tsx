@@ -16,7 +16,7 @@ const Booking = () => {
             >
               <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Book Your Service</h1>
               <p className="text-xl max-w-2xl">
-                Schedule your appointment with our professional detailing team.
+                Schedule your mobile detailing appointment. <span className="font-semibold">We come to you!</span>
               </p>
             </motion.div>
           </div>

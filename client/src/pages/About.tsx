@@ -79,10 +79,10 @@ const About = () => {
                 Fairway Detailing was founded in 2015 with a simple mission: to provide exceptional automotive care that goes beyond the standard car wash. As car enthusiasts ourselves, we understand the connection people have with their vehicles and the importance of keeping them in pristine condition.
               </p>
               <p className="text-gray-600 mb-4">
-                What started as a small mobile detailing service has grown into a full-service detailing company with a dedicated facility in Columbus, Ohio. Our growth has been driven by word-of-mouth from satisfied customers who appreciate our attention to detail and commitment to quality.
+                What started as a small mobile detailing service has grown into one of Ohio's premier mobile detailing companies. Our growth has been driven by word-of-mouth from satisfied customers who appreciate our convenience, attention to detail, and commitment to quality.
               </p>
               <p className="text-gray-600 mb-4">
-                Today, we offer a comprehensive range of services, from basic maintenance details to premium paint correction, ceramic coatings, and paint protection film. We continuously invest in training and the latest products and technologies to deliver the best results for our clients.
+                Today, we offer a comprehensive range of mobile services, from essential maintenance details to premium paint correction, ceramic coatings, and paint protection film. We come to you with all the necessary equipment to deliver professional-quality results right at your location.
               </p>
             </motion.div>
             <motion.div 

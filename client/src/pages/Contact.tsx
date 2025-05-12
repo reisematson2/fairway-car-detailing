@@ -15,7 +15,7 @@ const Contact = () => {
             >
               <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
               <p className="text-xl max-w-2xl">
-                Have questions about our services? Need a custom quote? We're here to help.
+                Have questions about our mobile detailing services? Need a custom quote? <strong>We come to you!</strong> We're here to help.
               </p>
             </motion.div>
           </div>
@@ -60,6 +60,29 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <ContactForm />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Service Areas */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-heading text-3xl font-bold mb-4">Our Service Areas</h2>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                We proudly serve Cleveland and surrounding areas, including East and West side cities within 45 miles of downtown Cleveland.
+              </p>
+              <div className="mt-6 font-medium">
+                <p>No need to come to us - our mobile detailing service brings the professional car care experience directly to you!</p>
+                <p className="mt-2 text-primary font-semibold">Home • Office • Anywhere that's convenient for you</p>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -157,20 +180,20 @@ const Contact = () => {
               >
                 <h3 className="font-heading font-bold text-xl mb-2">How long will my service take?</h3>
                 <p className="text-gray-600">
-                  Service times vary depending on the package and your vehicle's condition. Standard packages typically take 1.5-2 hours, Deluxe packages 3-4 hours, and Elite packages 6+ hours. Ceramic coating and PPF installations may require your vehicle to be with us for 1-5 days depending on the coverage area.
+                  Service times vary depending on the package and your vehicle's condition. Essential Detail typically takes 1.5-2 hours, Premium Refresh 3-4 hours, and Showroom Detail 6+ hours. Ceramic coating and PPF installations may require your vehicle to be with us for 1-5 days depending on the coverage area.
                 </p>
               </motion.div>
               
               <motion.div 
-                className="bg-white p-6 rounded-lg shadow-md"
+                className="bg-white p-6 rounded-lg shadow-md bg-primary bg-opacity-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <h3 className="font-heading font-bold text-xl mb-2">Do you offer mobile detailing services?</h3>
+                <h3 className="font-heading font-bold text-xl mb-2">How does your mobile detailing service work?</h3>
                 <p className="text-gray-600">
-                  We currently do not offer mobile services. All detailing work is performed at our facility, which is equipped with specialized lighting, tools, and a controlled environment to ensure the highest quality results.
+                  Our mobile detailing service brings professional car care to your location - home, office, or anywhere convenient for you. We arrive with our own water and power supply, and all the professional tools needed for your selected service. Just book an appointment, and we'll come to you within our service area!
                 </p>
               </motion.div>
               

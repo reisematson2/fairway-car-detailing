@@ -233,8 +233,8 @@ const Home = () => {
         </div>
       </section>
       
-      {/* Blog Preview */}
-      <section id="blog-preview" className="py-16 bg-gray-50">
+      {/* Before & After Showcase */}
+      <section id="before-after-preview" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <motion.div
@@ -243,29 +243,67 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-4">Car Care Blog</h2>
+              <h2 className="font-heading text-3xl font-bold mb-4">Before & After Transformations</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Tips, guides, and insights to help you keep your vehicle in top condition.
+                See the real results of our professional detailing services with these before and after comparisons.
               </p>
             </motion.div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {blogPosts.map((post, index) => (
-              <BlogCard
-                key={index}
-                title={post.title}
-                excerpt={post.excerpt}
-                imageSrc={post.imageSrc}
-                slug={post.slug}
-                index={index}
-              />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="grid grid-cols-2 gap-2">
+                <div className="relative">
+                  <img src="/src/assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg" alt="Before Exterior Detail" className="h-48 w-full object-cover" />
+                  <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
+                </div>
+                <div className="relative">
+                  <img src="/src/assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg" alt="After Exterior Detail" className="h-48 w-full object-cover" />
+                  <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-heading text-lg font-bold">Exterior Restoration</h3>
+                <p className="text-gray-600 text-sm">Complete paint correction and ceramic coating application.</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="grid grid-cols-2 gap-2">
+                <div className="relative">
+                  <img src="/src/assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg" alt="Before Interior Detail" className="h-48 w-full object-cover" />
+                  <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
+                </div>
+                <div className="relative">
+                  <img src="/src/assets/images/mathias-reding--6_4GRipckk-unsplash.jpg" alt="After Interior Detail" className="h-48 w-full object-cover" />
+                  <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-heading text-lg font-bold">Interior Transformation</h3>
+                <p className="text-gray-600 text-sm">Deep cleaning and conditioning of all interior surfaces.</p>
+              </div>
+            </motion.div>
           </div>
           
-          <div className="mt-12 text-center">
-            <Link href="/blog" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
-              View All Articles
+          <div className="mt-12 flex justify-center space-x-4">
+            <Link href="/before-after" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
+              View All Transformations
+            </Link>
+            <Link href="/booking" className="inline-block bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
+              Book Now
             </Link>
           </div>
         </div>
