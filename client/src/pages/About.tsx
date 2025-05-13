@@ -220,7 +220,7 @@ const About = () => {
           >
             <h2 className="font-heading text-3xl font-bold mb-4">Visit Our Shop</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Our Columbus facility is equipped with state-of-the-art tools and technology to provide the best care for your vehicle.
+              Our Cleveland facility is equipped with state-of-the-art tools and technology to provide the best care for your vehicle.
             </p>
           </motion.div>
 
@@ -242,7 +242,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold mb-1">Address</h4>
-                      <p className="text-gray-600">123 Detail Ave<br />Columbus, OH 43215</p>
+                      <p className="text-gray-600">123 Detail Ave<br />Cleveland, OH 44115</p>
                     </div>
                   </div>
                   
@@ -300,7 +300,7 @@ const About = () => {
             >
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px]">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.5097994598!2d-83.06088245552139!3d39.97347654377578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH!5e0!3m2!1sen!2sus!4v1684274278580!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95283.46745674586!2d-81.74734245!3d41.4996562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ef2ee3686b2d%3A0xed04cb55f7621842!2sCleveland%2C%20OH!5e0!3m2!1sen!2sus!4v1684274278580!5m2!1sen!2sus" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

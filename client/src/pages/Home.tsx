@@ -13,6 +13,11 @@ import detailingProcess from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash
 import carWashing from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 import mercedes from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
 import interior from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
+// Gallery transformation images
+import beforeExterior from "@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg";
+import afterExterior from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import beforeInterior from "@assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg";
+import afterInterior from "@assets/images/mathias-reding--6_4GRipckk-unsplash.jpg";
 
 const Home = () => {
   const processSteps = [
@@ -54,7 +59,7 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-heading text-3xl font-bold mb-4">About Fairway Detailing Test</h2>
+                <h2 className="font-heading text-3xl font-bold mb-4">About Fairway Detailing</h2>
                 <p className="text-gray-600 mb-6">
                   Fairway Detailing Company is Ohio's premier auto detailing service, dedicated to providing exceptional care for your vehicle. We combine industry-leading products with meticulous attention to detail to deliver results that exceed expectations.
                 </p>
@@ -80,10 +85,10 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <img src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" />
-                <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" />
-                <img src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" />
-                <img src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" />
+                <img src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
+                <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
+                <img src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
+                <img src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -243,7 +248,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-4">Before & After Transformations</h2>
+              <h2 className="font-heading text-3xl font-bold mb-4">Our Transformation Gallery</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 See the real results of our professional detailing services with these before and after comparisons.
               </p>
@@ -260,11 +265,11 @@ const Home = () => {
             >
               <div className="grid grid-cols-2 gap-2">
                 <div className="relative">
-                  <img src="/src/assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg" alt="Before Exterior Detail" className="h-48 w-full object-cover" />
+                  <img src={beforeExterior} alt="Before Exterior Detail" className="h-48 w-full object-cover" loading="lazy" />
                   <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
                 </div>
                 <div className="relative">
-                  <img src="/src/assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg" alt="After Exterior Detail" className="h-48 w-full object-cover" />
+                  <img src={afterExterior} alt="After Exterior Detail" className="h-48 w-full object-cover" loading="lazy" />
                   <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
                 </div>
               </div>
@@ -283,11 +288,11 @@ const Home = () => {
             >
               <div className="grid grid-cols-2 gap-2">
                 <div className="relative">
-                  <img src="/src/assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg" alt="Before Interior Detail" className="h-48 w-full object-cover" />
+                  <img src={beforeInterior} alt="Before Interior Detail" className="h-48 w-full object-cover" loading="lazy" />
                   <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
                 </div>
                 <div className="relative">
-                  <img src="/src/assets/images/mathias-reding--6_4GRipckk-unsplash.jpg" alt="After Interior Detail" className="h-48 w-full object-cover" />
+                  <img src={afterInterior} alt="After Interior Detail" className="h-48 w-full object-cover" loading="lazy" />
                   <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
                 </div>
               </div>
@@ -299,8 +304,8 @@ const Home = () => {
           </div>
           
           <div className="mt-12 flex justify-center space-x-4">
-            <Link href="/before-after" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
-              View All Transformations
+            <Link href="/gallery" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
+              View Our Gallery
             </Link>
             <Link href="/booking" className="inline-block bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
               Book Now
