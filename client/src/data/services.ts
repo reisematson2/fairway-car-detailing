@@ -22,7 +22,7 @@ export const services: ServiceType[] = [
   {
     id: "standard",
     title: "Essential Detail",
-    subtitle: "Essential Clean",
+    subtitle: "",
     description: "Ideal for routine maintenance & light cleaning. Estimated time: 1.5 to 2 hours.",
     price: "$130-$195",
     time: "~1.5 to 2 hours",
@@ -53,7 +53,7 @@ export const services: ServiceType[] = [
   {
     id: "deluxe",
     title: "Premium Refresh",
-    subtitle: "Premium Experience",
+    subtitle: "",
     description: "Ideal for deep cleaning & added paint protection. Estimated time: 3 to 4 hours.",
     price: "$210-$325",
     time: "~3 to 4 hours",
@@ -85,7 +85,7 @@ export const services: ServiceType[] = [
   {
     id: "elite",
     title: "Showroom Detail",
-    subtitle: "Elite Experience",
+    subtitle: "",
     description: "Ideal for total restoration or pre-sale detail. Estimated time: 6+ hours.",
     price: "$350-$500",
     time: "6+ hours",

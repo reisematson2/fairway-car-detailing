@@ -46,7 +46,7 @@ const ServicePackage = ({
         </div>
         <div className="md:w-3/5 p-8">
           <div className="flex justify-between items-start mb-4">
-            <h3 className="font-heading text-2xl font-bold">{title} - "{subtitle}"</h3>
+            <h3 className="font-heading text-2xl font-bold">{title}</h3>
             <p className="bg-gray-100 text-primary font-heading font-bold py-1 px-3 rounded">{price}</p>
           </div>
           <p className="text-gray-600 mb-6">{description}</p>

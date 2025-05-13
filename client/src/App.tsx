@@ -12,7 +12,7 @@ import Ceramic from "@/pages/Ceramic";
 import PPF from "@/pages/PPF";
 import LiquidWrap from "@/pages/LiquidWrap";
 import Blog from "@/pages/Blog";
-import BeforeAfter from "@/pages/BeforeAfter";
+import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
 
 function Router() {
@@ -25,7 +25,10 @@ function Router() {
         <Route path="/ceramic" component={Ceramic} />
         <Route path="/ppf" component={PPF} />
         <Route path="/liquid-wrap" component={LiquidWrap} />
-        <Route path="/before-after" component={BeforeAfter} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/before-after">
+          <Redirect to="/gallery" />
+        </Route>
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
         <Route path="/booking">

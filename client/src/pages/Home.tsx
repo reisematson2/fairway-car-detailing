@@ -234,7 +234,7 @@ const Home = () => {
       </section>
       
       {/* Before & After Showcase */}
-      <section id="before-after-preview" className="py-16 bg-gray-50">
+      <section id="gallery-preview" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <motion.div
