@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import ResponsiveImage from "./ResponsiveImage";
 
 interface ServiceItem {
   title: string;
@@ -42,7 +43,12 @@ const ServicePackage = ({
     >
       <div className="flex flex-col md:flex-row">
         <div className="md:w-2/5">
-          <img src={imageSrc} alt={`${title} Detailing Package`} className="h-full w-full object-cover" />
+          <ResponsiveImage 
+            src={imageSrc} 
+            alt={`${title} Detailing Package`} 
+            className="h-full w-full"
+            objectFit="cover" 
+          />
         </div>
         <div className="md:w-3/5 p-8">
           <div className="flex justify-between items-start mb-4">

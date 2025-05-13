@@ -6,6 +6,8 @@ import TestimonialCard from "@/components/TestimonialCard";
 import BlogCard from "@/components/BlogCard";
 import ProcessStep from "@/components/ProcessStep";
 import FAQSection from "@/components/FAQSection";
+import ResponsiveImage from "@/components/ResponsiveImage";
+import BeforeAfterImage from "@/components/BeforeAfterImage";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
@@ -16,8 +18,8 @@ import carWashing from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 import mercedes from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
 import interior from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
 // Gallery transformation images
-import beforeExterior from "@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg";
-import afterExterior from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import beforeExterior from "@assets/beforeAfter_images/IMG_0677.jpeg";
+import afterExterior from "@assets/beforeAfter_images/IMG_0734.jpeg";
 import beforeInterior from "@assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg";
 import afterInterior from "@assets/images/mathias-reding--6_4GRipckk-unsplash.jpg";
 
@@ -87,10 +89,10 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <img src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
-                <img src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
-                <img src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
-                <img src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full object-cover" loading="lazy" />
+                <ResponsiveImage src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full" loading="lazy" />
+                <ResponsiveImage src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full" loading="lazy" />
+                <ResponsiveImage src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full" loading="lazy" />
+                <ResponsiveImage src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full" loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -125,7 +127,11 @@ const Home = () => {
                 viewport={{ once: true }}
               >
                 <div className="h-48 overflow-hidden">
-                  <img src={service.imageSrc} alt={service.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  <ResponsiveImage 
+                    src={service.imageSrc} 
+                    alt={service.title} 
+                    className="w-full h-full hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
@@ -265,19 +271,16 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="grid grid-cols-2 gap-2">
-                <div className="relative">
-                  <img src={beforeExterior} alt="Before Exterior Detail" className="h-48 w-full object-cover" loading="lazy" />
-                  <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
-                </div>
-                <div className="relative">
-                  <img src={afterExterior} alt="After Exterior Detail" className="h-48 w-full object-cover" loading="lazy" />
-                  <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
-                </div>
-              </div>
+              <BeforeAfterImage 
+                beforeSrc={beforeExterior}
+                afterSrc={afterExterior}
+                beforeAlt="Before Exterior Detail"
+                afterAlt="After Exterior Detail"
+                height="h-48"
+              />
               <div className="p-4">
-                <h3 className="font-heading text-lg font-bold">Exterior Restoration</h3>
-                <p className="text-gray-600 text-sm">Complete paint correction and ceramic coating application.</p>
+                <h3 className="font-heading text-lg font-bold">Client Vehicle Transformation</h3>
+                <p className="text-gray-600 text-sm">Deep cleaning, paint correction and finish protection for this client vehicle.</p>
               </div>
             </motion.div>
             
@@ -288,16 +291,13 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="grid grid-cols-2 gap-2">
-                <div className="relative">
-                  <img src={beforeInterior} alt="Before Interior Detail" className="h-48 w-full object-cover" loading="lazy" />
-                  <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">Before</div>
-                </div>
-                <div className="relative">
-                  <img src={afterInterior} alt="After Interior Detail" className="h-48 w-full object-cover" loading="lazy" />
-                  <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">After</div>
-                </div>
-              </div>
+              <BeforeAfterImage 
+                beforeSrc={beforeInterior}
+                afterSrc={afterInterior}
+                beforeAlt="Before Interior Detail"
+                afterAlt="After Interior Detail"
+                height="h-48"
+              />
               <div className="p-4">
                 <h3 className="font-heading text-lg font-bold">Interior Transformation</h3>
                 <p className="text-gray-600 text-sm">Deep cleaning and conditioning of all interior surfaces.</p>

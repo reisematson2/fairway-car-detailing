@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import BeforeAfterImage from "@/components/BeforeAfterImage";
 
 // Using real car detailing photos from the assets folder
-import beforeImage1 from "@assets/images/damian-karpinski-ipUaqAswEec-unsplash.jpg";
-import afterImage1 from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import beforeImage1 from "@assets/beforeAfter_images/IMG_0677.jpeg";
+import afterImage1 from "@assets/beforeAfter_images/IMG_0734.jpeg";
 import beforeImage2 from "@assets/images/mohammed-shahan-xb6CKGkHdw4-unsplash.jpg";
 import afterImage2 from "@assets/images/joshua-rodriguez-x6uI9XahGjA-unsplash.jpg";
 import beforeImage3 from "@assets/images/iwin-EoTNE15v0qs-unsplash.jpg";
@@ -24,11 +25,11 @@ interface TransformationItemProps {
 const transformations: TransformationItemProps[] = [
   {
     id: 1,
-    title: "Exterior Restoration",
-    description: "This vehicle received our Showroom Detail package, bringing back its factory shine with paint correction and ceramic coating.",
+    title: "Client Vehicle Transformation",
+    description: "Real client vehicle transformed with our premium detailing service. Deep cleaning, paint correction and protective coating brought back the vehicle's showroom shine.",
     beforeImage: beforeImage1,
     afterImage: afterImage1,
-    tags: ["Paint Correction", "Ceramic Coating", "Exterior Detail"]
+    tags: ["Paint Correction", "Deep Cleaning", "Client Vehicle"]
   },
   {
     id: 2,
@@ -65,30 +66,13 @@ const TransformationItem = ({ item }: { item: TransformationItemProps }) => {
       viewport={{ once: true }}
       className="bg-white rounded-lg shadow-md overflow-hidden"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="relative">
-          <img 
-            src={item.beforeImage} 
-            alt={`Before ${item.title}`} 
-            className="w-full h-64 object-cover" 
-            loading="lazy"
-          />
-          <div className="absolute top-2 left-2 bg-black bg-opacity-70 text-white text-sm font-semibold py-1 px-3 rounded">
-            Before
-          </div>
-        </div>
-        <div className="relative">
-          <img 
-            src={item.afterImage} 
-            alt={`After ${item.title}`} 
-            className="w-full h-64 object-cover" 
-            loading="lazy"
-          />
-          <div className="absolute top-2 left-2 bg-primary bg-opacity-90 text-white text-sm font-semibold py-1 px-3 rounded">
-            After
-          </div>
-        </div>
-      </div>
+      <BeforeAfterImage
+        beforeSrc={item.beforeImage}
+        afterSrc={item.afterImage}
+        beforeAlt={`Before ${item.title}`}
+        afterAlt={`After ${item.title}`}
+        height="h-64"
+      />
       <div className="p-6">
         <h3 className="font-heading text-xl font-bold mb-2">{item.title}</h3>
         <p className="text-gray-600 mb-4">{item.description}</p>
