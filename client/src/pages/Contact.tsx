@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ContactForm, ContactInfo } from "@/components/ContactForm";
+import ServiceAreaMap from "@/components/ServiceAreaMap";
 
 const Contact = () => {
   return (
@@ -77,52 +78,63 @@ const Contact = () => {
             >
               <h2 className="font-heading text-3xl font-bold mb-4">Our Service Areas</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                We proudly serve Cleveland and surrounding areas, including East and West side cities within 45 miles of downtown Cleveland.
+                We proudly serve Cleveland and surrounding areas, covering approximately 45 miles east, west, and south of downtown Cleveland.
               </p>
-              <div className="mt-6 font-medium">
-                <p>No need to come to us - our mobile detailing service brings the professional car care experience directly to you!</p>
+              <div className="mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <h3 className="font-heading font-bold text-lg mb-3 text-primary">East Side</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Beachwood</li>
+                      <li>• Chagrin Falls</li>
+                      <li>• Euclid</li>
+                      <li>• Mentor</li>
+                      <li>• Solon</li>
+                      <li>• Willoughby</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <h3 className="font-heading font-bold text-lg mb-3 text-primary">West Side</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Avon</li>
+                      <li>• Bay Village</li>
+                      <li>• Lakewood</li>
+                      <li>• North Olmsted</li>
+                      <li>• Rocky River</li>
+                      <li>• Westlake</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <h3 className="font-heading font-bold text-lg mb-3 text-primary">South</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Akron</li>
+                      <li>• Brecksville</li>
+                      <li>• Brunswick</li>
+                      <li>• Medina</li>
+                      <li>• Strongsville</li>
+                      <li>• Twinsburg</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="mt-8 font-medium">No need to come to us - our mobile detailing service brings the professional car care experience directly to you!</p>
                 <p className="mt-2 text-primary font-semibold">Home • Office • Anywhere that's convenient for you</p>
+                
+                {/* Service Area Map Visual */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="mt-12"
+                >
+                  <ServiceAreaMap />
+                  <p className="text-gray-500 text-sm mt-4 max-w-2xl mx-auto">
+                    We're based in Cleveland and travel throughout Northeast Ohio to serve you. If your location isn't listed, please contact us to check availability.
+                  </p>
+                </motion.div>
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-      
-      {/* Map */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-heading text-3xl font-bold mb-4">Our Location</h2>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                Visit our facility in Columbus, Ohio. We're conveniently located and ready to serve you.
-              </p>
-            </motion.div>
-          </div>
-          
-          <motion.div 
-            className="max-w-5xl mx-auto bg-white rounded-lg shadow-md overflow-hidden h-[400px]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.5097994598!2d-83.06088245552139!3d39.97347654377578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH!5e0!3m2!1sen!2sus!4v1684274278580!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Fairway Detailing Location"
-            ></iframe>
-          </motion.div>
         </div>
       </section>
       

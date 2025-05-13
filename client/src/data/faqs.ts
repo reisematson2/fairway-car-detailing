@@ -8,7 +8,7 @@ export interface FAQItem {
 export const generalFAQs: FAQItem[] = [
   {
     question: "What areas do you service in Cleveland?",
-    answer: "We provide mobile detailing services throughout the greater Cleveland area, including surrounding suburbs like Shaker Heights, Lakewood, Parma, and more. We can travel to your home or office for your convenience."
+    answer: "We provide mobile detailing services throughout Northeast Ohio, covering approximately 45 miles east, west, and south of downtown Cleveland. Our service area includes East side cities like Beachwood, Mentor, Chagrin Falls, and Solon; West side areas like Westlake, Avon, North Olmsted, and Strongsville; and South to areas including Brunswick, Medina, and Akron. We come directly to your home or office for your convenience."
   },
   {
     question: "Do I need to provide water or electricity?",
