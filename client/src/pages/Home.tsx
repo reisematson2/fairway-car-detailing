@@ -241,7 +241,7 @@ const Home = () => {
       </section>
       
       {/* Before & After Showcase */}
-      <section id="gallery-preview" className="py-16 bg-gray-50">
+      <section id="work-preview" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <motion.div
@@ -317,24 +317,7 @@ const Home = () => {
       </section>
       
       {/* FAQ Section */}
-      <section id="faq" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-heading text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                Have questions about our services? Check out our FAQ section for answers to common inquiries.
-              </p>
-            </motion.div>
-          </div>
-          <FAQSection faqs={generalFAQs} />
-        </div>
-      </section>
+      <FAQSection faqs={generalFAQs} />
       
       {/* Contact CTA Section */}
       <section id="contact-cta" className="py-16 bg-secondary">

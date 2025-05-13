@@ -116,7 +116,7 @@ const Gallery = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Gallery</h1>
+              <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Our Work</h1>
               <p className="text-xl max-w-2xl">
                 See the transformations we've achieved for our clients. Real results from our mobile detailing services.
               </p>
@@ -135,9 +135,9 @@ const Gallery = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-4">Our Transformations</h2>
+              <h2 className="font-heading text-3xl font-bold mb-4">Featured Projects</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Browse through our showcase of real detailing transformations. Each project demonstrates our commitment to excellence
+                Browse through our showcase of real detailing projects. Each transformation demonstrates our commitment to excellence
                 and attention to detail.
               </p>
             </motion.div>
