@@ -5,9 +5,11 @@ import Features from "@/components/Features";
 import TestimonialCard from "@/components/TestimonialCard";
 import BlogCard from "@/components/BlogCard";
 import ProcessStep from "@/components/ProcessStep";
+import FAQSection from "@/components/FAQSection";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
+import { generalFAQs } from "@/data/faqs";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import detailingProcess from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
 import carWashing from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
@@ -311,6 +313,26 @@ const Home = () => {
               Book Now
             </Link>
           </div>
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section id="faq" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-heading text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                Have questions about our services? Check out our FAQ section for answers to common inquiries.
+              </p>
+            </motion.div>
+          </div>
+          <FAQSection faqs={generalFAQs} />
         </div>
       </section>
       
