@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import OhioLogo from "@/assets/OhioLogo";
+import Logo from "@/assets/Logo";
 import { Facebook, Instagram, Twitter, Youtube, ArrowRight } from "lucide-react";
 
 const Footer = () => {
@@ -10,13 +10,7 @@ const Footer = () => {
           {/* Logo and Info */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center mb-4">
-              <div className="h-10 w-10 mr-3">
-                <OhioLogo />
-              </div>
-              <div>
-                <h1 className="font-heading font-bold text-white text-lg">FAIRWAY</h1>
-                <p className="text-primary text-xs font-medium">IT'S ALL ABOUT A CLEAN DRIVE</p>
-              </div>
+              <Logo className="h-10 mr-3" />
             </Link>
             <p className="text-gray-400 mb-6">
               Ohio's one-stop shop for mobile detailing services. We come to you!

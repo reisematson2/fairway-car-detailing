@@ -1,4 +1,4 @@
-import logoPath from "@assets/FullLogo_Transparent.png";
+import logoPath from "@assets/NewLogo.png";
 
 const Logo = ({ className = "h-10" }: { className?: string }) => {
   return (
