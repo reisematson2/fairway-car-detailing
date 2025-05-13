@@ -250,7 +250,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-4">Our Transformation Gallery</h2>
+              <h2 className="font-heading text-3xl font-bold mb-4">Our Work</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 See the real results of our professional detailing services with these before and after comparisons.
               </p>
@@ -307,7 +307,7 @@ const Home = () => {
           
           <div className="mt-12 flex justify-center space-x-4">
             <Link href="/gallery" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
-              View Our Gallery
+              View Our Work
             </Link>
             <Link href="/booking" className="inline-block bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
               Book Now

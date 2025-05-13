@@ -32,8 +32,8 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href="/contact" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8 py-3 rounded-md text-center transition-colors">
-                Contact Us
+              <Link href="/services" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8 py-3 rounded-md text-center transition-colors">
+                Our Services
               </Link>
               <Link href="/booking" className="bg-white hover:bg-gray-100 text-secondary font-heading font-semibold px-8 py-3 rounded-md text-center transition-colors">
                 Book Now
