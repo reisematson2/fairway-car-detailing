@@ -51,46 +51,34 @@ const Home = () => {
     <>
       <Hero />
       
-      {/* About Section */}
-      <section id="about" className="py-16">
+      {/* Our Mission Section */}
+      <section id="mission" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="font-heading text-3xl font-bold mb-4">About Fairway Detailing</h2>
-                <p className="text-gray-600 mb-6">
-                  Fairway Detailing Company is Ohio's premier auto detailing service, dedicated to providing exceptional care for your vehicle. We combine industry-leading products with meticulous attention to detail to deliver results that exceed expectations.
-                </p>
-                <p className="text-gray-600 mb-6">
-                  Our team of certified detailers has years of experience working with all types of vehicles, from daily drivers to exotic cars. We understand that your vehicle is an investment, and we're committed to helping you protect it and keep it looking its best.
-                </p>
-                <div className="flex items-center space-x-6">
-                  <Link href="/services" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md transition-colors">
-                    Our Services
-                  </Link>
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-heading text-3xl font-bold mb-6">Our Mission at Fairway Detailing Company</h2>
+              <div className="relative mb-8">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-200"></div>
                 </div>
-              </motion.div>
-            </div>
-            <div className="md:w-1/2">
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <div className="grid grid-cols-2 gap-4">
-                  <ResponsiveImage src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full" />
-                  <ResponsiveImage src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full" />
-                  <ResponsiveImage src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full" />
-                  <ResponsiveImage src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full" />
+                <div className="relative flex justify-center">
+                  <span className="bg-white px-4 text-sm text-gray-500">QUALITY & CARE</span>
                 </div>
-              </motion.div>
-            </div>
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                "At Fairway Detailing Company, our mission is to provide top-quality detailing with care, precision, and the best products available. We're all about personalized customer service, attention to detail, and making sure every customer drives away satisfied. Whether restoring a vehicle's shine or protecting its finish, we take pride in being your trusted choice for automotive detailing."
+              </p>
+              <div className="flex justify-center">
+                <Link href="/services" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
+                  Discover Our Services
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

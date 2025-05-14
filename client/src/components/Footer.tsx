@@ -1,6 +1,6 @@
 import { Link } from "wouter";
-import Logo from "@/assets/Logo";
-import { Facebook, Instagram, Twitter, Youtube, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import fullLogo from "@/assets/fulllogo.png";
 
 const Footer = () => {
   return (
@@ -9,8 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Info */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center mb-4">
-              <Logo className="h-12 mr-3 brightness-[1.3] filter" />
+            <Link href="/" className="block mb-4">
+              <img 
+                src={fullLogo} 
+                alt="Fairway Detailing Company Logo" 
+                className="w-full max-w-[220px] brightness-[1.3] filter" 
+              />
             </Link>
             <p className="text-gray-400 mb-6">
               Ohio's one-stop shop for mobile detailing services. We come to you!
@@ -43,25 +47,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Contact Info */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Stay Updated</h4>
-            <p className="text-gray-400 mb-4">Subscribe to our newsletter for tips, news, and special offers.</p>
-            <form className="mb-4">
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="w-full px-3 py-2 bg-white bg-opacity-10 rounded-l-md border border-gray-700 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-white placeholder-gray-500"
-                />
-                <button 
-                  type="submit" 
-                  className="bg-primary hover:bg-primary/90 px-4 py-2 rounded-r-md transition-colors"
-                >
-                  <ArrowRight className="h-5 w-5" />
-                </button>
-              </div>
-            </form>
+            <h4 className="font-heading font-bold text-lg mb-4">Contact Us</h4>
+            <div className="space-y-3 mb-6">
+              <p className="text-gray-400">
+                <span className="font-semibold text-white">Phone:</span><br />
+                (555) 123-4567
+              </p>
+              <p className="text-gray-400">
+                <span className="font-semibold text-white">Email:</span><br />
+                info@fairwaydetailing.com
+              </p>
+              <p className="text-gray-400">
+                <span className="font-semibold text-white">Operating Hours:</span><br />
+                Mon-Fri: 8am - 6pm<br />
+                Sat: 9am - 4pm
+              </p>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
