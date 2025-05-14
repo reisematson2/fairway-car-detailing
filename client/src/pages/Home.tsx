@@ -50,7 +50,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Features />
       
       {/* About Section */}
       <section id="about" className="py-16">
@@ -74,27 +73,24 @@ const Home = () => {
                   <Link href="/services" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md transition-colors">
                     Our Services
                   </Link>
-                  <Link href="/contact" className="text-primary hover:text-primary/90 font-heading font-semibold flex items-center transition-colors">
-                    <span>Contact Us</span>
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
                 </div>
               </motion.div>
             </div>
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="grid grid-cols-2 gap-4">
-                <ResponsiveImage src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full" loading="lazy" />
-                <ResponsiveImage src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full" loading="lazy" />
-                <ResponsiveImage src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full" loading="lazy" />
-                <ResponsiveImage src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full" loading="lazy" />
-              </div>
-            </motion.div>
+            <div className="md:w-1/2">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <div className="grid grid-cols-2 gap-4">
+                  <ResponsiveImage src={detailingProcess} alt="Detailing Process" className="rounded-lg h-48 w-full" />
+                  <ResponsiveImage src={carWashing} alt="Car Washing" className="rounded-lg h-48 w-full" />
+                  <ResponsiveImage src={mercedes} alt="Paint Correction" className="rounded-lg h-48 w-full" />
+                  <ResponsiveImage src={interior} alt="Interior Detailing" className="rounded-lg h-48 w-full" />
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

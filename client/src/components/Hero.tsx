@@ -13,8 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-4">It's All About a Clean Drive</h1>
-            <p className="text-xl mb-6">Ohio's one-stop shop for mobile detailing. Professional services that protect your investment and keep your vehicle looking showroom-new.</p>
+            {/* Content removed to make space for new content */}
             
             <div className="mb-8">
               <div className="flex items-center mb-2">
