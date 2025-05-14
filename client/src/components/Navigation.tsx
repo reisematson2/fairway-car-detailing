@@ -52,12 +52,14 @@ const Navigation = () => {
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo, Company Name and Tagline */}
+        {/* Company Name and Tagline (visible on all devices) */}
         <Link href="/" className="flex items-center gap-3">
-          <Logo className="h-14" />
-          <div className="hidden sm:flex flex-col">
-            <span className="font-heading font-bold text-xl" style={{ color: '#5CA424', textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)' }}>Fairway Detailing Company</span>
-            <span className="font-heading text-sm font-medium" style={{ marginTop: '-2px' }}>It's all about a clean drive!</span>
+          <div className="flex flex-col">
+            <span className="font-heading font-bold text-lg md:text-xl" style={{ color: '#5CA424', textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)' }}>Fairway Detailing Company</span>
+            <span className="font-heading text-xs md:text-sm font-medium" style={{ marginTop: '-2px' }}>It's all about a clean drive!</span>
+          </div>
+          <div className="hidden sm:block">
+            <Logo className="h-14" />
           </div>
         </Link>
 
@@ -138,10 +140,6 @@ const Navigation = () => {
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-4 py-2">
-          <div className="flex flex-col mb-3">
-            <span className="font-heading font-bold text-lg" style={{ color: '#5CA424', textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)' }}>Fairway Detailing Company</span>
-            <span className="font-heading text-sm font-medium" style={{ marginTop: '-2px' }}>It's all about a clean drive!</span>
-          </div>
           <div className="flex flex-col space-y-3 py-3">
             {navLinks.map((link) => (
               <Link 
