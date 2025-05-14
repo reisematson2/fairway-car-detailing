@@ -54,7 +54,7 @@ const Navigation = () => {
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo and Company Name */}
         <Link href="/" className="flex items-center gap-3">
-          <Logo className="h-12" />
+          <Logo className="h-14" />
           <span className="font-heading font-bold text-xl hidden sm:block">Fairway Car Detailing</span>
         </Link>
 

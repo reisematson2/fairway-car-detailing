@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo and Info */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center mb-4">
-              <Logo className="h-10 mr-3" />
+              <Logo className="h-12 mr-3 brightness-[1.3] filter" />
             </Link>
             <p className="text-gray-400 mb-6">
               Ohio's one-stop shop for mobile detailing services. We come to you!
