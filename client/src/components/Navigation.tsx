@@ -72,7 +72,7 @@ const Navigation = () => {
       )}
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Company Name and Tagline (visible on all devices) */}
-        <Link href="/" className="flex items-center gap-2 lg:gap-3 flex-shrink-0">
+        <Link href="/" className="flex items-center gap-2 lg:gap-3 flex-shrink-0 pr-4">
           {/* Logo - hidden on mobile, visible and positioned first on larger screens */}
           <div className="hidden sm:block order-first">
             <Logo className="h-14 md:h-16" />
@@ -86,7 +86,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-3 lg:space-x-6">
+        <div className="hidden lg:flex items-center space-x-3 lg:space-x-6 ml-6">
           {navLinks.map((link) => (
             <Link 
               key={link.path}
