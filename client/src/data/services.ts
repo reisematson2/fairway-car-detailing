@@ -48,6 +48,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
+    /* May change these later */
     imageSrc: "https://images.unsplash.com/photo-1649793395985-967862a3b73f?q=100&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0"
   },
   {
