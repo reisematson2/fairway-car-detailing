@@ -35,7 +35,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-black">Time-Saving and Hassle-Free</h3>
+                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Time-Saving and Hassle-Free</h3>
                     <p className="text-gray-200 text-xs sm:text-sm md:text-base">
                       Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
                     </p>
@@ -44,7 +44,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-black">One-Stop Shop</h3>
+                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">One-Stop Shop</h3>
                     <p className="text-gray-200 text-xs sm:text-sm md:text-base">
                       Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
                     </p>
@@ -54,7 +54,7 @@ const Hero = () => {
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Proven Experience</h3>
-                    <p className="text-black text-xs sm:text-sm md:text-base">
+                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
                       Over 10 years of hands-on experience and proven results in automotive detailing.
                     </p>
                   </div>
@@ -63,7 +63,7 @@ const Hero = () => {
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Locally Owned and Trusted</h3>
-                    <p className="text-black text-xs sm:text-sm md:text-base">
+                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
                       Family-operated in Northeast Ohio—personalized service where we treat every detail like it's for one of our own.
                     </p>
                   </div>

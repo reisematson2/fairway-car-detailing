@@ -8,7 +8,6 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [showMobileCallBanner, setShowMobileCallBanner] = useState(true);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -52,24 +51,6 @@ const Navigation = () => {
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
-      {/* Mobile Call Banner - only visible on mobile */}
-      {showMobileCallBanner && (
-        <div className="lg:hidden bg-primary text-white py-2 px-4 flex items-center justify-between">
-          <div className="flex items-center">
-            <Phone className="h-4 w-4 mr-2" />
-            <a href="tel:5551234567" className="text-white font-heading font-semibold text-sm">
-              Call us: (555) 123-4567
-            </a>
-          </div>
-          <button
-            onClick={() => setShowMobileCallBanner(false)}
-            className="text-white focus:outline-none"
-            aria-label="Close call banner"
-          >
-            <X className="h-4 w-4" />
-          </button>
-        </div>
-      )}
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Company Name and Tagline (visible on all devices) */}
         <Link href="/" className="flex items-center gap-2 lg:gap-3 flex-shrink-0 pr-4">
