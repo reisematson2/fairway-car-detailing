@@ -6,12 +6,12 @@ const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
       {/* Background pattern for visual interest */}
-      <div className="absolute inset-0 before:absolute before:inset-0 before:bg-[url('/noise.svg')] before:opacity-5 before:pointer-events-none">
+      <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </div>
-      <div className="relative py-20 px-6 text-center">
-        <div className="max-w-5xl mx-auto">
+      <div className="relative py-20 px-6">
+        <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
             {/* Left side content */}
             <motion.div 
