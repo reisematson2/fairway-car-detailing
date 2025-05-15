@@ -56,11 +56,6 @@ const Footer = () => {
                 <span className="font-semibold text-white">Email:</span><br />
                 info@fairwaydetailing.com
               </p>
-              <p className="text-gray-400">
-                <span className="font-semibold text-white">Operating Hours:</span><br />
-                Mon-Fri: 8am - 6pm<br />
-                Sat: 9am - 4pm
-              </p>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

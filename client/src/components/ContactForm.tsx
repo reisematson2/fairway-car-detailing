@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Phone, MapPin, Clock, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import {
@@ -42,11 +42,6 @@ const ContactInfo = () => {
       icon: <Mail className="text-primary" />,
       title: "Email",
       details: ["info@fairwaydetailing.com"]
-    },
-    {
-      icon: <Clock className="text-primary" />,
-      title: "Hours",
-      details: ["Mon-Fri: 8am - 6pm", "Sat: 9am - 4pm", "Sun: Closed"]
     }
   ];
 
