@@ -70,12 +70,12 @@ const Navigation = () => {
           </button>
         </div>
       )}
-      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Company Name and Tagline (visible on all devices) */}
         <Link href="/" className="flex items-center gap-3">
           {/* Logo - hidden on mobile, visible and positioned first on larger screens */}
           <div className="hidden sm:block order-first">
-            <Logo className="h-14" />
+            <Logo className="h-16" />
           </div>
           
           {/* Company name and tagline - shown on all devices */}

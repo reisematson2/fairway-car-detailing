@@ -10,17 +10,17 @@ const Hero = () => {
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </div>
-      <div className="relative py-20 px-6">
+      <div className="relative py-14 px-6">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-6 md:gap-10">
             {/* Left side content */}
             <motion.div 
-              className="w-full md:w-3/5 text-white mt-4 md:mt-0"
+              className="w-full md:w-3/5 text-white mt-2 md:mt-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-white text-center md:text-left">Reasons to Call Fairway Detailing Company</h2>
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-white text-center md:text-left">Reasons to Call Fairway Detailing Company</h2>
               
               <ul className="space-y-3 mb-8 md:mb-0 text-left">
                 <li className="flex items-start gap-2">
