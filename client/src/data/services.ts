@@ -48,7 +48,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1649793395985-967862a3b73f?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imageSrc: "https://images.unsplash.com/photo-1649793395985-967862a3b73f?q=100&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0"
   },
   {
     id: "deluxe",
@@ -80,7 +80,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    imageSrc: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=100"
   },
   {
     id: "elite",
@@ -114,7 +114,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1609532269538-57cbf63135c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imageSrc: "https://images.unsplash.com/photo-1629121796199-b23f1612705d?q=100&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0"
   }
 ];
 
