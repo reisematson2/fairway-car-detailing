@@ -4,10 +4,14 @@ import { Phone, Mail, CheckCircle } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-hero-pattern bg-cover bg-center">
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative px-4 pt-12 pb-16 md:py-24 lg:py-32">
-        <div className="container mx-auto">
+    <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
+      {/* Background pattern for visual interest */}
+      <div className="absolute inset-0 before:absolute before:inset-0 before:bg-[url('/noise.svg')] before:opacity-5 before:pointer-events-none">
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+      </div>
+      <div className="relative py-20 px-6 text-center">
+        <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
             {/* Left side content */}
             <motion.div 
@@ -16,50 +20,50 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Reasons to Call Fairway Detailing Company</h2>
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-white text-center md:text-left">Reasons to Call Fairway Detailing Company</h2>
               
-              <ul className="space-y-4 md:space-y-5 mb-8 md:mb-0">
-                <li className="flex">
-                  <CheckCircle className="h-5 w-5 text-primary brightness-125 mt-1 mr-3 flex-shrink-0 drop-shadow-md" />
+              <ul className="space-y-3 mb-8 md:mb-0 text-left">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-primary brightness-125">Preserve Vehicle Value</h3>
-                    <p className="text-gray-100 text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg text-white">Preserve Vehicle Value</h3>
+                    <p className="text-gray-200 text-lg">
                       Regular detailing helps maintain the value of your car—preventing damage from dirt, UV rays, and interior stains. Ideal for lease returns or future resale!
                     </p>
                   </div>
                 </li>
-                <li className="flex">
-                  <CheckCircle className="h-5 w-5 text-primary brightness-125 mt-1 mr-3 flex-shrink-0 drop-shadow-md" />
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-primary brightness-125">Time-Saving and Hassle-Free</h3>
-                    <p className="text-gray-100 text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg text-white">Time-Saving and Hassle-Free</h3>
+                    <p className="text-gray-200 text-lg">
                       Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
                     </p>
                   </div>
                 </li>
-                <li className="flex">
-                  <CheckCircle className="h-5 w-5 text-primary brightness-125 mt-1 mr-3 flex-shrink-0 drop-shadow-md" />
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-primary brightness-125">One-Stop Shop</h3>
-                    <p className="text-gray-100 text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg text-white">One-Stop Shop</h3>
+                    <p className="text-gray-200 text-lg">
                       Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
                     </p>
                   </div>
                 </li>
-                <li className="flex">
-                  <CheckCircle className="h-5 w-5 text-primary brightness-125 mt-1 mr-3 flex-shrink-0 drop-shadow-md" />
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-primary brightness-125">Proven Experience</h3>
-                    <p className="text-gray-100 text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg text-white">Proven Experience</h3>
+                    <p className="text-gray-200 text-lg">
                       Over 10 years of hands-on experience and proven results in automotive detailing.
                     </p>
                   </div>
                 </li>
-                <li className="flex">
-                  <CheckCircle className="h-5 w-5 text-primary brightness-125 mt-1 mr-3 flex-shrink-0 drop-shadow-md" />
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-primary brightness-125">Locally Owned and Trusted</h3>
-                    <p className="text-gray-100 text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg text-white">Locally Owned and Trusted</h3>
+                    <p className="text-gray-200 text-lg">
                       Family-operated in Northeast Ohio—personalized service where we treat every detail like it's for one of our own.
                     </p>
                   </div>
@@ -74,29 +78,29 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                <h3 className="font-heading text-xl font-bold mb-4 text-secondary">Contact Us Today</h3>
+              <div className="bg-white text-black rounded-xl shadow-lg p-6">
+                <h3 className="font-heading text-xl font-bold mb-2 text-secondary">Contact Us Today</h3>
                 
                 <div className="mb-6 space-y-4">
                   <div className="flex items-center">
-                    <Phone className="h-5 w-5 mr-3 text-primary" />
-                    <a href="tel:5551234567" className="text-gray-700 hover:text-primary transition-colors text-lg">
+                    <Phone className="h-5 w-5 mr-3 text-[#5CA424]" />
+                    <a href="tel:5551234567" className="text-[#5CA424] font-medium text-lg hover:underline transition-all">
                       (555) 123-4567
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="h-5 w-5 mr-3 text-primary" />
-                    <a href="mailto:info@fairwaydetailing.com" className="text-gray-700 hover:text-primary transition-colors">
+                    <Mail className="h-5 w-5 mr-3 text-[#5CA424]" />
+                    <a href="mailto:info@fairwaydetailing.com" className="text-[#5CA424] font-medium hover:underline transition-all">
                       info@fairwaydetailing.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="space-y-3">
-                  <Link href="/services" className="block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md text-center transition-colors w-full">
+                  <Link href="/services" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-2 rounded-full transition font-semibold text-center w-full">
                     Our Services
                   </Link>
-                  <Link href="/booking" className="block bg-secondary hover:bg-secondary/90 text-white font-heading font-semibold px-6 py-3 rounded-md text-center transition-colors w-full">
+                  <Link href="/booking" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-2 rounded-full transition font-semibold text-center w-full">
                     Book Now
                   </Link>
                 </div>
