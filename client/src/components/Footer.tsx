@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
-import fullLogo from "@/assets/fulllogo.png";
+import fullLogo from "@/assets/fulllogo_transparent_darkBG.png";
 
 const Footer = () => {
   return (
@@ -13,12 +13,9 @@ const Footer = () => {
               <img 
                 src={fullLogo} 
                 alt="Fairway Detailing Company Logo" 
-                className="w-full max-w-[220px] brightness-[1.3] filter" 
+                className="w-full max-w-[350px]" 
               />
             </Link>
-            <p className="text-gray-400 mb-6">
-              Ohio's one-stop shop for mobile detailing services. We come to you!
-            </p>
           </div>
 
           {/* Quick Links */}

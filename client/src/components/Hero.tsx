@@ -26,7 +26,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-white">Preserve Vehicle Value</h3>
+                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Preserve Vehicle Value</h3>
                     <p className="text-gray-200 text-lg">
                       Regular detailing helps maintain the value of your car—preventing damage from dirt, UV rays, and interior stains. Ideal for lease returns or future resale!
                     </p>
@@ -35,7 +35,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-white">Time-Saving and Hassle-Free</h3>
+                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Time-Saving and Hassle-Free</h3>
                     <p className="text-gray-200 text-lg">
                       Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
                     </p>
@@ -44,7 +44,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-white">One-Stop Shop</h3>
+                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">One-Stop Shop</h3>
                     <p className="text-gray-200 text-lg">
                       Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
                     </p>
@@ -53,7 +53,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-white">Proven Experience</h3>
+                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Proven Experience</h3>
                     <p className="text-gray-200 text-lg">
                       Over 10 years of hands-on experience and proven results in automotive detailing.
                     </p>
@@ -62,7 +62,7 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-white">Locally Owned and Trusted</h3>
+                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Locally Owned and Trusted</h3>
                     <p className="text-gray-200 text-lg">
                       Family-operated in Northeast Ohio—personalized service where we treat every detail like it's for one of our own.
                     </p>
