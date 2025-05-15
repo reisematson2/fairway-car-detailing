@@ -54,7 +54,7 @@ const Navigation = () => {
     <header className="bg-white sticky top-0 z-50 shadow-sm">
       {/* Mobile Call Banner - only visible on mobile */}
       {showMobileCallBanner && (
-        <div className="md:hidden bg-primary text-white py-2 px-4 flex items-center justify-between">
+        <div className="lg:hidden bg-primary text-white py-2 px-4 flex items-center justify-between">
           <div className="flex items-center">
             <Phone className="h-4 w-4 mr-2" />
             <a href="tel:5551234567" className="text-white font-heading font-semibold text-sm">
@@ -72,26 +72,26 @@ const Navigation = () => {
       )}
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Company Name and Tagline (visible on all devices) */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2 lg:gap-3 flex-shrink-0">
           {/* Logo - hidden on mobile, visible and positioned first on larger screens */}
           <div className="hidden sm:block order-first">
-            <Logo className="h-16" />
+            <Logo className="h-14 md:h-16" />
           </div>
           
           {/* Company name and tagline - shown on all devices */}
-          <div className="flex flex-col">
-            <span className="font-heading font-bold text-lg md:text-xl" style={{ color: '#5CA424', textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)' }}>Fairway Detailing Company</span>
-            <span className="font-heading text-xs md:text-sm font-medium" style={{ marginTop: '-2px' }}>It's all about a clean drive!</span>
+          <div className="flex flex-col flex-shrink-0">
+            <span className="font-heading font-bold text-base sm:text-lg lg:text-xl" style={{ color: '#5CA424', textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)' }}>Fairway Detailing Company</span>
+            <span className="font-heading text-xs lg:text-sm font-medium" style={{ marginTop: '-2px' }}>It's all about a clean drive!</span>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-3 lg:space-x-6">
           {navLinks.map((link) => (
             <Link 
               key={link.path}
               href={link.path}
-              className={`font-heading font-semibold transition-colors ${
+              className={`font-heading font-semibold text-sm lg:text-base transition-colors ${
                 isActive(link.path) ? "text-primary" : "hover:text-primary"
               }`}
             >
@@ -103,39 +103,37 @@ const Navigation = () => {
           <div className="relative" ref={dropdownRef}>
             <button 
               onClick={toggleServicesDropdown}
-              className={`font-heading font-semibold transition-colors flex items-center ${
+              className={`font-heading font-semibold text-sm lg:text-base transition-colors flex items-center ${
                 isServicesActive() ? "text-primary" : "hover:text-primary"
               }`}
             >
-              Services <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
-            </button>
-            
-            {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 mt-1 w-52 bg-white shadow-lg rounded-md py-1 z-50">
+              Services <ChevronDown className={`ml-1 h-3 lg:h-4 w-3 lg:w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>              {servicesDropdownOpen && (
+              <div className="absolute top-full right-0 sm:left-0 mt-1 w-48 sm:w-52 bg-white shadow-lg rounded-md py-1 z-50">
                 <Link 
                   href="/services" 
-                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
+                  className={`block px-3 sm:px-4 py-2 font-heading font-semibold text-xs sm:text-sm ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
                   onClick={() => setServicesDropdownOpen(false)}
                 >
                   All Services
                 </Link>
                 <Link 
                   href="/ceramic" 
-                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
+                  className={`block px-3 sm:px-4 py-2 font-heading font-semibold text-xs sm:text-sm ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
                   onClick={() => setServicesDropdownOpen(false)}
                 >
                   Ceramic Coatings
                 </Link>
                 <Link 
                   href="/ppf" 
-                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
+                  className={`block px-3 sm:px-4 py-2 font-heading font-semibold text-xs sm:text-sm ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
                   onClick={() => setServicesDropdownOpen(false)}
                 >
                   Paint Protection Film
                 </Link>
                 <Link 
                   href="/liquid-wrap" 
-                  className={`block px-4 py-2 font-heading font-semibold text-sm ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
+                  className={`block px-3 sm:px-4 py-2 font-heading font-semibold text-xs sm:text-sm ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
                   onClick={() => setServicesDropdownOpen(false)}
                 >
                   Liquid Wrap
@@ -144,14 +142,14 @@ const Navigation = () => {
             )}
           </div>
           
-          <a href="tel:5551234567" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md transition-colors flex items-center">
-            <Phone className="mr-2 h-4 w-4" /> (555) 123-4567
+          <a href="tel:5551234567" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-3 lg:px-5 py-1 lg:py-2 rounded-md transition-colors flex items-center text-sm lg:text-base whitespace-nowrap">
+            <Phone className="mr-1 lg:mr-2 h-3 lg:h-4 w-3 lg:w-4" /> (555) 123-4567
           </a>
         </div>
 
         {/* Mobile menu button */}
         <button 
-          className="md:hidden text-secondary focus:outline-none"
+          className="lg:hidden text-secondary focus:outline-none"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -161,7 +159,7 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-2">
+        <div className="lg:hidden bg-white border-t border-gray-200 px-4 py-2">
           <div className="flex flex-col space-y-3 py-3">
             {navLinks.map((link) => (
               <Link 

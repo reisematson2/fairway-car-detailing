@@ -7,27 +7,27 @@ const Hero = () => {
     <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
       {/* Background pattern for visual interest */}
       <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
+        <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </div>
-      <div className="relative py-14 px-6">
+      <div className="relative py-10 sm:py-12 lg:py-14 px-4 sm:px-6">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-6 md:gap-10">
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10">
             {/* Left side content */}
             <motion.div 
-              className="w-full md:w-3/5 text-white mt-2 md:mt-0"
+              className="w-full lg:w-3/5 text-white mt-2 lg:mt-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-white text-center md:text-left">Reasons to Call Fairway Detailing Company</h2>
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-5 text-white text-center lg:text-left">Reasons to Call Fairway Detailing Company</h2>
               
-              <ul className="space-y-3 mb-8 md:mb-0 text-left">
+              <ul className="space-y-3 mb-8 lg:mb-0 text-left">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Preserve Vehicle Value</h3>
-                    <p className="text-gray-200 text-lg">
+                    <h3 className="font-heading font-bold text-xl text-white">Preserve Vehicle Value</h3>
+                    <p className="text-gray-200 text-base lg:text-lg">
                       Regular detailing helps maintain the value of your car—preventing damage from dirt, UV rays, and interior stains. Ideal for lease returns or future resale!
                     </p>
                   </div>
@@ -35,8 +35,8 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Time-Saving and Hassle-Free</h3>
-                    <p className="text-gray-200 text-lg">
+                    <h3 className="font-heading font-bold text-xl text-white">Time-Saving and Hassle-Free</h3>
+                    <p className="text-gray-200 text-base lg:text-lg">
                       Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
                     </p>
                   </div>
@@ -44,8 +44,8 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">One-Stop Shop</h3>
-                    <p className="text-gray-200 text-lg">
+                    <h3 className="font-heading font-bold text-xl text-white">One-Stop Shop</h3>
+                    <p className="text-gray-200 text-base lg:text-lg">
                       Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
                     </p>
                   </div>
@@ -53,8 +53,8 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Proven Experience</h3>
-                    <p className="text-gray-200 text-lg">
+                    <h3 className="font-heading font-bold text-xl text-white">Proven Experience</h3>
+                    <p className="text-gray-200 text-base lg:text-lg">
                       Over 10 years of hands-on experience and proven results in automotive detailing.
                     </p>
                   </div>
@@ -62,8 +62,8 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-green-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-xl md:text-2xl text-white">Locally Owned and Trusted</h3>
-                    <p className="text-gray-200 text-lg">
+                    <h3 className="font-heading font-bold text-xl text-white">Locally Owned and Trusted</h3>
+                    <p className="text-gray-200 text-base lg:text-lg">
                       Family-operated in Northeast Ohio—personalized service where we treat every detail like it's for one of our own.
                     </p>
                   </div>
@@ -73,34 +73,34 @@ const Hero = () => {
             
             {/* Right side contact card */}
             <motion.div
-              className="w-full md:w-2/5 max-w-md my-4 md:my-0"
+              className="w-full lg:w-2/5 max-w-md mx-auto lg:mx-0 my-4 lg:my-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="bg-white text-black rounded-xl shadow-lg p-6">
-                <h3 className="font-heading text-xl font-bold mb-2 text-secondary">Contact Us Today</h3>
+              <div className="bg-white text-black rounded-xl shadow-lg p-4 sm:p-6">
+                <h3 className="font-heading text-lg sm:text-xl font-bold mb-2 text-secondary">Contact Us Today</h3>
                 
-                <div className="mb-6 space-y-4">
+                <div className="mb-4 sm:mb-6 space-y-3 sm:space-y-4">
                   <div className="flex items-center">
-                    <Phone className="h-5 w-5 mr-3 text-[#5CA424]" />
-                    <a href="tel:5551234567" className="text-[#5CA424] font-medium text-lg hover:underline transition-all">
+                    <Phone className="h-4 sm:h-5 w-4 sm:w-5 mr-2 sm:mr-3 text-[#5CA424]" />
+                    <a href="tel:5551234567" className="text-[#5CA424] font-medium text-base sm:text-lg hover:underline transition-all">
                       (555) 123-4567
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="h-5 w-5 mr-3 text-[#5CA424]" />
-                    <a href="mailto:info@fairwaydetailing.com" className="text-[#5CA424] font-medium hover:underline transition-all">
+                    <Mail className="h-4 sm:h-5 w-4 sm:w-5 mr-2 sm:mr-3 text-[#5CA424]" />
+                    <a href="mailto:info@fairwaydetailing.com" className="text-[#5CA424] font-medium text-base hover:underline transition-all">
                       info@fairwaydetailing.com
                     </a>
                   </div>
                 </div>
                 
-                <div className="space-y-3">
-                  <Link href="/services" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-2 rounded-full transition font-semibold text-center w-full">
+                <div className="space-y-2 sm:space-y-3">
+                  <Link href="/services" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-1.5 sm:py-2 rounded-full transition font-semibold text-center w-full text-sm sm:text-base">
                     Our Services
                   </Link>
-                  <Link href="/booking" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-2 rounded-full transition font-semibold text-center w-full">
+                  <Link href="/booking" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-1.5 sm:py-2 rounded-full transition font-semibold text-center w-full text-sm sm:text-base">
                     Book Now
                   </Link>
                 </div>
