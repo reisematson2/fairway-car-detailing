@@ -52,7 +52,7 @@ const Services = () => {
           </div>
           
           {/* Service Tabs */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="mb-6 flex flex-wrap justify-center">
               {services.map((service) => (
                 <button
@@ -75,29 +75,28 @@ const Services = () => {
             
             {/* Tab Content */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <AnimatePresence mode="wait">
                 {services.map((service) => (
-                  <ServicePackage
-                    key={service.id}
-                    id={service.id}
-                    title={service.title}
-                    subtitle={service.subtitle}
-                    description={service.description}
-                    price={service.price}
-                    services={service.services}
-                    imageSrc={service.imageSrc}
-                    isActive={activeTab === service.id}
-                  />
+                  <div key={service.id} style={{ display: activeTab === service.id ? 'block' : 'none' }}>
+                    <ServicePackage
+                      id={service.id}
+                      title={service.title}
+                      subtitle={service.subtitle}
+                      description={service.description}
+                      price={service.price}
+                      services={service.services}
+                      imageSrc={service.imageSrc}
+                      isActive={true}
+                    />
+                  </div>
                 ))}
                 
                 {/* Add-ons */}
-                {activeTab === 'addon' && (
+                <div style={{ display: activeTab === 'addon' ? 'block' : 'none' }}>
                   <motion.div 
                     id="content-addon" 
                     className="service-content"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
                     <div className="p-8">
@@ -116,8 +115,7 @@ const Services = () => {
                       </div>
                     </div>
                   </motion.div>
-                )}
-              </AnimatePresence>
+                </div>
             </div>
           </div>
         </div>

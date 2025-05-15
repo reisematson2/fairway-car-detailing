@@ -22,8 +22,29 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
   
   // Reset loading state when src changes
   useEffect(() => {
-    setIsLoaded(false);
-    setError(false);
+    // Create an image object to preload the image
+    const img = new Image();
+    img.src = src;
+    
+    if (img.complete) {
+      setIsLoaded(true);
+    } else {
+      setIsLoaded(false);
+      setError(false);
+      
+      img.onload = () => {
+        setIsLoaded(true);
+      };
+      
+      img.onerror = () => {
+        setError(true);
+      };
+    }
+    
+    return () => {
+      img.onload = null;
+      img.onerror = null;
+    };
   }, [src]);
 
   return (
