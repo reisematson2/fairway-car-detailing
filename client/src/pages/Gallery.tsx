@@ -4,14 +4,14 @@ import { Link } from "wouter";
 import BeforeAfterImage from "@/components/BeforeAfterImage";
 
 // Using real car detailing photos from the assets folder
-import beforeImage1 from "@assets/beforeAfter_images/IMG_0677.jpeg";
-import afterImage1 from "@assets/beforeAfter_images/IMG_0734.jpeg";
-import beforeImage2 from "@assets/images/mohammed-shahan-xb6CKGkHdw4-unsplash.jpg";
-import afterImage2 from "@assets/images/joshua-rodriguez-x6uI9XahGjA-unsplash.jpg";
-import beforeImage3 from "@assets/images/iwin-EoTNE15v0qs-unsplash.jpg";
-import afterImage3 from "@assets/images/leon-kohle-mxBHH7lhiCc-unsplash.jpg";
-import beforeImage4 from "@assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg";
-import afterImage4 from "@assets/images/mathias-reding--6_4GRipckk-unsplash.jpg";
+import beforeImage1 from "@assets/images/detailing_process/detailing_process1.png";
+import afterImage1 from "@assets/images/detailing_process/detailing_process2.png";
+import beforeImage2 from "@assets/images/services/essential_detail1.png";
+import afterImage2 from "@assets/images/services/ceramic_coating1.jpg";
+import beforeImage3 from "@assets/images/services/premium_refresh1.png";
+import afterImage3 from "@assets/images/services/ceramic_coating2.jpg";
+import beforeImage4 from "@assets/images/services/showroom_detail1.jpg";
+import afterImage4 from "@assets/images/services/ppf1.png";
 
 interface TransformationItemProps {
   id: number;

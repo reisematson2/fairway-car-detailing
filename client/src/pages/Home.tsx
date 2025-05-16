@@ -13,15 +13,15 @@ import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
 import { generalFAQs } from "@/data/faqs";
 import { ArrowRight, Phone, Mail } from "lucide-react";
-import detailingProcess from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
-import carWashing from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
-import mercedes from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
-import interior from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
+import detailingProcess from "@assets/images/detailing_process/detailing_process1.png";
+import carWashing from "@assets/images/services/essential_detail1.png";
+import mercedes from "@assets/images/services/showroom_detail1.jpg";
+import interior from "@assets/images/services/premium_refresh1.png";
 // Gallery transformation images
-import beforeExterior from "@assets/beforeAfter_images/IMG_0677.jpeg";
-import afterExterior from "@assets/beforeAfter_images/IMG_0734.jpeg";
-import beforeInterior from "@assets/images/humberto-portillo-HWX4b_bB_JU-unsplash.jpg";
-import afterInterior from "@assets/images/mathias-reding--6_4GRipckk-unsplash.jpg";
+import beforeExterior from "@assets/images/detailing_process/detailing_process2.png";
+import afterExterior from "@assets/images/detailing_process/detailing_process3.png";
+import beforeInterior from "@assets/images/detailing_process/detailing_process4.png";
+import afterInterior from "@assets/images/services/ceramic_coating1.jpg";
 
 const Home = () => {
   const processSteps = [

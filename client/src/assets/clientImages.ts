@@ -1,14 +1,14 @@
 // Optimized client images with responsive sizes
-import before0677Small from '@assets/optimized_images/IMG_0677-small.webp';
-import before0677Medium from '@assets/optimized_images/IMG_0677-medium.webp';
-import before0677Large from '@assets/optimized_images/IMG_0677-large.webp';
-import after0734Small from '@assets/optimized_images/IMG_0734-small.webp';
-import after0734Medium from '@assets/optimized_images/IMG_0734-medium.webp';
-import after0734Large from '@assets/optimized_images/IMG_0734-large.webp';
+import before0677Small from "@assets/images/detailing_process/detailing_process1.png";
+import before0677Medium from "@assets/images/detailing_process/detailing_process2.png";
+import before0677Large from "@assets/images/detailing_process/detailing_process3.png";
+import after0734Small from "@assets/images/detailing_process/detailing_process4.png";
+import after0734Medium from "@assets/images/services/ceramic_coating1.jpg";
+import after0734Large from "@assets/images/services/ceramic_coating2.jpg";
 
 // Original image paths (high quality but larger file size)
-import beforeExteriorOriginal from "@assets/beforeAfter_images/IMG_0677.jpeg";
-import afterExteriorOriginal from "@assets/beforeAfter_images/IMG_0734.jpeg";
+import beforeExteriorOriginal from "@assets/beforeAfter_images/before1.jpeg";
+import afterExteriorOriginal from "@assets/beforeAfter_images/after1.jpeg";
 
 interface ResponsiveImageSet {
   original: string;

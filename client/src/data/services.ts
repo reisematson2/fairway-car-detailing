@@ -1,3 +1,8 @@
+// Import service images
+import essentialDetailImg from "@assets/images/services/essential_detail1.png";
+import premiumRefreshImg from "@assets/images/services/premium_refresh1.png";
+import showroomDetailImg from "@assets/images/services/showroom_detail1.jpg";
+
 export interface ServiceType {
   id: string;
   title: string;
@@ -48,8 +53,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    /* May change these later */
-    imageSrc: "https://images.unsplash.com/photo-1649793395985-967862a3b73f?q=100&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0"
+    imageSrc: essentialDetailImg
   },
   {
     id: "deluxe",
@@ -81,7 +85,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=100"
+    imageSrc: premiumRefreshImg
   },
   {
     id: "elite",
@@ -115,7 +119,7 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: "https://images.unsplash.com/photo-1629121796199-b23f1612705d?q=100&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0"
+    imageSrc: showroomDetailImg
   }
 ];
 
