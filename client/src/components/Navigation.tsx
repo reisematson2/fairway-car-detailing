@@ -1,15 +1,39 @@
+/**
+ * Navigation.tsx
+ * 
+ * Primary navigation component for the website that handles both desktop and mobile views.
+ * Includes responsive design, dropdown menus, and active link highlighting.
+ */
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import Logo from "@/assets/Logo";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 
+/**
+ * Navigation component that provides the main site navigation
+ * Features:
+ * - Responsive design for both desktop and mobile
+ * - Services dropdown menu
+ * - Active link highlighting
+ * - Mobile menu toggle
+ * 
+ * @returns JSX for the site-wide navigation header
+ */
 const Navigation = () => {
+  // Get current route for highlighting active links
   const [location] = useLocation();
+  
+  // State for mobile menu and services dropdown visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  
+  // Reference to the dropdown element for click-outside detection
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown when clicking outside
+  /**
+   * Effect for handling clicks outside the services dropdown
+   * Closes the dropdown when user clicks anywhere else on the page
+   */
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -22,22 +46,44 @@ const Navigation = () => {
     };
   }, []);
 
+  /**
+   * Toggles the mobile menu open/closed state
+   */
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  /**
+   * Closes the mobile menu (used when a link is clicked)
+   */
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
 
+  /**
+   * Toggles the services dropdown menu open/closed state
+   */
   const toggleServicesDropdown = () => {
     setServicesDropdownOpen(!servicesDropdownOpen);
   };
 
+  /**
+   * Checks if the given path matches the current location
+   * Used for highlighting active links
+   * 
+   * @param path - The path to check against current location
+   * @returns boolean indicating if the path is active
+   */
   const isActive = (path: string) => {
     return location === path;
   };
 
+  /**
+   * Checks if any services-related page is currently active
+   * Used for highlighting the Services dropdown
+   * 
+   * @returns boolean indicating if any service page is active
+   */
   const isServicesActive = () => {
     return ["/services", "/ceramic", "/ppf", "/liquid-wrap"].includes(location);
   };
