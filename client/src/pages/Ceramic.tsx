@@ -3,14 +3,24 @@ import { Link } from "wouter";
 import CeramicPackage from "@/components/CeramicPackage";
 import { ceramicPackages, ceramicAddons } from "@/data/ceramicPackages";
 import { ArrowRight } from "lucide-react";
+import ceramicImg1 from "@/assets/images/services/ceramic_coating1.jpg";
+import ceramicImg2 from "@/assets/images/services/ceramic_coating2.jpg";
+import ceramicVideo from "@/assets/videos/ceramic_coating_video1.mp4";
 
 const Ceramic = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-ceramic-pattern bg-cover bg-center">
-        <div className="bg-black bg-opacity-75">
-          <div className="container mx-auto px-4 text-white py-24">
+      <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
+        {/* Background pattern with noise texture and decorative elements */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
+          {/* Decorative blur effect in top corner */}
+          <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
+          {/* Thin gradient line at bottom for visual separation */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        </div>
+        <div className="relative py-24">
+          <div className="container mx-auto px-4 text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,8 +65,8 @@ const Ceramic = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                alt="Ceramic Coating Application" 
+                src={ceramicImg1}
+                alt="Ceramic Coating Image" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </motion.div>
@@ -177,8 +187,8 @@ const Ceramic = () => {
       </section>
 
       {/* Our Ceramic Packages */}
-      <section className="bg-ceramic-pattern bg-cover bg-center">
-        <div className="bg-black bg-opacity-75 py-16">
+      <section className="bg-cover bg-center" style={{ backgroundImage: `url(${ceramicImg2})` }}>
+        <div className="bg-black bg-opacity-80 py-16">
           <div className="container mx-auto px-4 text-white">
             <div className="text-center mb-12">
               <motion.div
@@ -303,10 +313,26 @@ const Ceramic = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="grid grid-cols-1 gap-4">
-                  <img src="https://images.unsplash.com/photo-1636099871190-e9805a4e4857?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Washing Car" className="rounded-lg shadow-md w-full h-auto" />
-                  <img src="https://images.unsplash.com/photo-1635342219231-b921407e1c24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paint Correction" className="rounded-lg shadow-md w-full h-auto" />
-                  <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coating Application" className="rounded-lg shadow-md w-full h-auto" />
+                <div className="h-full flex items-center">
+                  <div className="relative rounded-lg shadow-lg overflow-hidden w-full">
+                    <video 
+                      className="w-full h-auto" 
+                      controls 
+                      poster={ceramicImg1}
+                      preload="auto"
+                      playsInline
+                      autoPlay
+                      muted
+                    >
+                      <source src={ceramicVideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 flex items-end justify-center transition-opacity duration-300 p-4 pointer-events-none">
+                      <div className="bg-white bg-opacity-90 text-primary rounded-lg px-4 py-2 font-heading font-semibold shadow-lg">
+                        Ceramic Coating Application
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </div>

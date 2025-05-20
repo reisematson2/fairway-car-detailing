@@ -7,8 +7,8 @@ import after0734Medium from "@assets/images/services/ceramic_coating1.jpg";
 import after0734Large from "@assets/images/services/ceramic_coating2.jpg";
 
 // Original image paths (high quality but larger file size)
-import beforeExteriorOriginal from "@assets/beforeAfter_images/before1.jpeg";
-import afterExteriorOriginal from "@assets/beforeAfter_images/after1.jpeg";
+import beforeExteriorOriginal from "@assets/beforeAfter_images/before1.webp";
+import afterExteriorOriginal from "@assets/beforeAfter_images/after1.webp";
 
 interface ResponsiveImageSet {
   original: string;

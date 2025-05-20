@@ -48,8 +48,15 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-ceramic-pattern bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+      <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
+        {/* Background pattern with noise texture and decorative elements */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
+          {/* Decorative blur effect in top corner */}
+          <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
+          {/* Thin gradient line at bottom for visual separation */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        </div>
+        <div className="relative py-24">
           <div className="container mx-auto px-4 text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

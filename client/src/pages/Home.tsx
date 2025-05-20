@@ -17,11 +17,11 @@ import detailingProcess from "@assets/images/detailing_process/detailing_process
 import carWashing from "@assets/images/services/essential_detail1.png";
 import mercedes from "@assets/images/services/showroom_detail1.jpg";
 import interior from "@assets/images/services/premium_refresh1.png";
-// Gallery transformation images
-import beforeExterior from "@assets/images/detailing_process/detailing_process2.png";
-import afterExterior from "@assets/images/detailing_process/detailing_process3.png";
-import beforeInterior from "@assets/images/detailing_process/detailing_process4.png";
-import afterInterior from "@assets/images/services/ceramic_coating1.jpg";
+// Gallery transformation images - using the same images as in the Gallery page
+import beforeExterior from "@assets/beforeAfter_images/before1.webp";
+import afterExterior from "@assets/beforeAfter_images/after1.webp";
+import beforeInterior from "@assets/beforeAfter_images/before2.png";
+import afterInterior from "@assets/beforeAfter_images/after2.png";
 
 const Home = () => {
   const processSteps = [
@@ -264,7 +264,7 @@ const Home = () => {
               />
               <div className="p-4">
                 <h3 className="font-heading text-lg font-bold">Client Vehicle Transformation</h3>
-                <p className="text-gray-600 text-sm">Deep cleaning, paint correction and finish protection for this client vehicle.</p>
+                <p className="text-gray-600 text-sm">Real client vehicle transformed with our premium detailing service. Deep cleaning, paint correction and protective coating.</p>
               </div>
             </motion.div>
             
@@ -283,8 +283,8 @@ const Home = () => {
                 height="h-48"
               />
               <div className="p-4">
-                <h3 className="font-heading text-lg font-bold">Interior Transformation</h3>
-                <p className="text-gray-600 text-sm">Deep cleaning and conditioning of all interior surfaces.</p>
+                <h3 className="font-heading text-lg font-bold">Interior Deep Clean</h3>
+                <p className="text-gray-600 text-sm">Complete interior transformation with our Premium Refresh package, including steam cleaning and leather conditioning.</p>
               </div>
             </motion.div>
           </div>

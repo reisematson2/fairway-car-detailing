@@ -8,6 +8,9 @@ import carWashing from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
 import paintCorrection from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 import interiorCleaning from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
 import finalResult from "@assets/images/deniz-demirci-8kaGBtXl4do-unsplash.jpg";
+import motorcycle from "@assets/images/motorcycle/motorcycle1.jpg";
+import trailer1 from "@assets/images/fleet_trailers/fleet_trailers1.png";
+import trailer2 from "@assets/images/fleet_trailers/fleet_trailer2.png";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("standard");
@@ -19,8 +22,15 @@ const Services = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-hero-pattern bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+      <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
+        {/* Background pattern with noise texture and decorative elements */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
+          {/* Decorative blur effect in top corner */}
+          <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
+          {/* Thin gradient line at bottom for visual separation */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        </div>
+        <div className="relative py-24">
           <div className="container mx-auto px-4 text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -251,6 +261,110 @@ const Services = () => {
                 </p>
                 <Link href="/ppf" className="text-primary hover:text-primary/90 font-heading font-semibold flex items-center transition-colors">
                   <span>Explore PPF Options</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Motorcycle & Trailer Detailing */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-heading text-3xl font-bold mb-4">Beyond Cars: Motorcycle & Trailer Detailing</h2>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                Our premium detailing services extend beyond cars. We provide specialized care for motorcycles and trailers with the same attention to detail and quality results.
+              </p>
+            </motion.div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Motorcycle Detailing */}
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="h-56 overflow-hidden">
+                <img src={motorcycle} alt="Motorcycle Detailing" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading text-2xl font-bold mb-3">Motorcycle Detailing</h3>
+                <p className="text-gray-600 mb-4">
+                  Our specialized motorcycle detailing service keeps your bike looking showroom fresh. We understand the unique challenges of detailing motorcycles and use techniques specifically developed for them.
+                </p>
+                <ul className="text-gray-600 mb-6 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Chrome polishing and restoration</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Engine cleaning and degreasing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Paint protection and ceramic coating</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Leather seat cleaning and conditioning</span>
+                  </li>
+                </ul>
+                <Link href="/contact" className="text-primary hover:text-primary/90 font-heading font-semibold flex items-center transition-colors">
+                  <span>Contact For Quote</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </motion.div>
+            
+            {/* Trailer Detailing */}
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="h-56 overflow-hidden grid grid-cols-2 gap-2">
+                <img src={trailer1} alt="Trailer Detailing" className="w-full h-full object-cover" />
+                <img src={trailer2} alt="Trailer Detailing Close-up" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading text-2xl font-bold mb-3">Trailer Detailing</h3>
+                <p className="text-gray-600 mb-4">
+                  Keep your trailer looking professional and protected from the elements. Whether it's a utility trailer, boat trailer, or food trailer, our services will protect your investment.
+                </p>
+                <ul className="text-gray-600 mb-6 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Exterior washing and polish</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Rust prevention treatments</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Undercarriage cleaning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Surface protection and sealing</span>
+                  </li>
+                </ul>
+                <Link href="/contact" className="text-primary hover:text-primary/90 font-heading font-semibold flex items-center transition-colors">
+                  <span>Contact For Quote</span>
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>

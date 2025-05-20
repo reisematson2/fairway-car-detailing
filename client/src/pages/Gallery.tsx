@@ -4,10 +4,10 @@ import { Link } from "wouter";
 import BeforeAfterImage from "@/components/BeforeAfterImage";
 
 // Using real car detailing photos from the assets folder
-import beforeImage1 from "@assets/images/detailing_process/detailing_process1.png";
-import afterImage1 from "@assets/images/detailing_process/detailing_process2.png";
-import beforeImage2 from "@assets/images/services/essential_detail1.png";
-import afterImage2 from "@assets/images/services/ceramic_coating1.jpg";
+import beforeImage1 from "@assets/beforeAfter_images/before1.webp";
+import afterImage1 from "@assets/beforeAfter_images/after1.webp";
+import beforeImage2 from "@assets/beforeAfter_images/before2.png";
+import afterImage2 from "@assets/beforeAfter_images/after2.png";
 import beforeImage3 from "@assets/images/services/premium_refresh1.png";
 import afterImage3 from "@assets/images/services/ceramic_coating2.jpg";
 import beforeImage4 from "@assets/images/services/showroom_detail1.jpg";
@@ -38,22 +38,6 @@ const transformations: TransformationItemProps[] = [
     beforeImage: beforeImage2,
     afterImage: afterImage2,
     tags: ["Interior Detail", "Steam Cleaning", "Leather Treatment"]
-  },
-  {
-    id: 3,
-    title: "Wheel & Tire Restoration",
-    description: "Specialized wheel cleaning and tire dressing as part of our Essential Detail package.",
-    beforeImage: beforeImage3,
-    afterImage: afterImage3,
-    tags: ["Wheel Cleaning", "Tire Dressing", "Detail"]
-  },
-  {
-    id: 4,
-    title: "Full Vehicle Transformation",
-    description: "Complete interior and exterior detailing with our Showroom Detail package for this luxury vehicle.",
-    beforeImage: beforeImage4,
-    afterImage: afterImage4,
-    tags: ["Complete Detail", "Paint Protection", "Interior Refresh"]
   },
 ];
 
@@ -92,8 +76,15 @@ const Gallery = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[40vh] bg-hero-pattern bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+      <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
+        {/* Background pattern with noise texture and decorative elements */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
+          {/* Decorative blur effect in top corner */}
+          <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
+          {/* Thin gradient line at bottom for visual separation */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        </div>
+        <div className="relative py-24">
           <div className="container mx-auto px-4 text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
