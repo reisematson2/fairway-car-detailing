@@ -403,6 +403,150 @@ const PPF = () => {
         </div>
       </section>
 
+      {/* Add-On Coverage Options */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-heading text-3xl font-bold mb-4">Add-On Coverage Options</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Customize your protection with these additional coverage options to suit your specific needs.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-xl mb-2">Headlights / Taillights</h3>
+              <p className="text-gray-600 mb-4">Protect your lighting elements from UV damage and yellowing.</p>
+              <p className="text-primary font-bold">From $199</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-xl mb-2">Door Edge Guards</h3>
+              <p className="text-gray-600 mb-4">Protect vulnerable door edges from chips and scratches.</p>
+              <p className="text-primary font-bold">$149</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-xl mb-2">Luggage Area Strip</h3>
+              <p className="text-gray-600 mb-4">Protect your trunk/rear cargo area from scratches and wear.</p>
+              <p className="text-primary font-bold">$99</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-xl mb-2">Roof & Pillars</h3>
+              <p className="text-gray-600 mb-4">Complete protection for your vehicle's roof and pillars.</p>
+              <p className="text-primary font-bold">From $599</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-xl mb-2">Carbon Fiber Accents</h3>
+              <p className="text-gray-600 mb-4">Custom PPF protection for carbon fiber elements.</p>
+              <p className="text-primary font-bold">Custom Pricing</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose XPEL PPF */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-heading text-3xl font-bold mb-4">Why Choose XPEL PPF?</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Experience the benefits of industry-leading paint protection film technology.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-lg mb-2">Self-healing Technology</h3>
+              <p className="text-gray-600">Minor scratches and swirls disappear with heat from the sun or engine.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-lg mb-2">Stain & Discoloration Resistant</h3>
+              <p className="text-gray-600">Protection against environmental contaminants and UV damage.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-lg mb-2">10-Year Warranty</h3>
+              <p className="text-gray-600">Industry-leading warranty coverage for peace of mind.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="font-heading font-bold text-lg mb-2">Expert Installation</h3>
+              <p className="text-gray-600">Professional installation by certified technicians for perfect results.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Application Process */}
       <section className="py-16">
         <div className="container mx-auto px-4">
