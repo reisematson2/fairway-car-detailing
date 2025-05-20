@@ -51,6 +51,8 @@ const Navigation = () => {
    */
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    // Close services dropdown when mobile menu is toggled
+    setServicesDropdownOpen(false);
   };
 
   /**
@@ -58,6 +60,7 @@ const Navigation = () => {
    */
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setServicesDropdownOpen(false);
   };
 
   /**
@@ -186,13 +189,13 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 px-4 py-2">
-          <div className="flex flex-col space-y-3 py-3">
+        <div className="lg:hidden bg-white border-t border-gray-200">
+          <div className="container mx-auto px-4 py-2 space-y-2">
             {navLinks.map((link) => (
               <Link 
                 key={link.path}
                 href={link.path}
-                className={`font-heading font-semibold transition-colors ${
+                className={`block font-heading font-semibold py-2 transition-colors ${
                   isActive(link.path) ? "text-primary" : "hover:text-primary"
                 }`}
                 onClick={closeMobileMenu}
@@ -202,42 +205,43 @@ const Navigation = () => {
             ))}
             
             {/* Services Menu Item */}
-            <div>
+            <div ref={dropdownRef}>
               <button 
                 onClick={toggleServicesDropdown}
-                className={`font-heading font-semibold transition-colors flex items-center w-full text-left ${
+                className={`w-full text-left font-heading font-semibold py-2 transition-colors flex items-center justify-between ${
                   isServicesActive() ? "text-primary" : "hover:text-primary"
                 }`}
               >
-                Services <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+                <span>Services</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {servicesDropdownOpen && (
-                <div className="ml-4 mt-2 space-y-2">
+                <div className="ml-4 mt-2 space-y-2 border-l-2 border-gray-100 pl-4">
                   <Link 
                     href="/services" 
-                    className={`block font-heading font-semibold ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
+                    className={`block font-heading font-semibold py-2 ${isActive("/services") ? "text-primary" : "hover:text-primary"}`}
                     onClick={closeMobileMenu}
                   >
                     All Services
                   </Link>
                   <Link 
                     href="/ceramic" 
-                    className={`block font-heading font-semibold ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
+                    className={`block font-heading font-semibold py-2 ${isActive("/ceramic") ? "text-primary" : "hover:text-primary"}`}
                     onClick={closeMobileMenu}
                   >
                     Ceramic Coatings
                   </Link>
                   <Link 
                     href="/ppf" 
-                    className={`block font-heading font-semibold ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
+                    className={`block font-heading font-semibold py-2 ${isActive("/ppf") ? "text-primary" : "hover:text-primary"}`}
                     onClick={closeMobileMenu}
                   >
                     Paint Protection Film
                   </Link>
                   <Link 
                     href="/liquid-wrap" 
-                    className={`block font-heading font-semibold ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
+                    className={`block font-heading font-semibold py-2 ${isActive("/liquid-wrap") ? "text-primary" : "hover:text-primary"}`}
                     onClick={closeMobileMenu}
                   >
                     Liquid Wrap
@@ -248,10 +252,10 @@ const Navigation = () => {
             
             <a 
               href="tel:5551234567" 
-              className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md inline-flex items-center justify-center transition-colors"
+              className="block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md text-center transition-colors"
               onClick={closeMobileMenu}
             >
-              <Phone className="mr-2 h-4 w-4" /> (555) 123-4567
+              <Phone className="inline-block mr-2 h-4 w-4" /> (555) 123-4567
             </a>
           </div>
         </div>

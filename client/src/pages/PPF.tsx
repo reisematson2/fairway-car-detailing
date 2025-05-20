@@ -6,6 +6,12 @@ import { ArrowRight, Check } from "lucide-react";
 import ppfImage1 from "@assets/images/chris-barbalis-CWGLUO6PmtA-unsplash.jpg";
 import ppfImage2 from "@assets/images/chris-hardy-qtygLvwYNYE-unsplash.jpg";
 import ppfImage3 from "@assets/images/andy-ramos-XiLQ2a4fKbU-unsplash.jpg";
+import matteBlackMercedes from "@assets/images/services/ppf1.png";
+import matteBlackRivian from "@assets/images/services/xpel_stealth.webp";
+import matteBlackTesla from "@assets/images/services/xpel_ultimate2.webp";
+import ppfInstallation from "@assets/images/services/xpel_ultimate.webp";
+import ppfInstallation2 from "@assets/images/services/ppf_process2.webp";
+import xpel from "@assets/images/services/xpel.webp";
 
 const PPF = () => {
   return (
@@ -28,7 +34,7 @@ const PPF = () => {
             >
               <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Paint Protection Film</h1>
               <p className="text-xl max-w-2xl">
-                The ultimate defense against road debris, stone chips, and environmental damage for your vehicle's finish.
+                Protect your vehicle's finish with industry-leading XPEL PPF, offering superior protection against rock chips, scratches, and environmental damage.
               </p>
             </motion.div>
           </div>
@@ -46,17 +52,33 @@ const PPF = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-6">What is Paint Protection Film?</h2>
+              <h2 className="font-heading text-3xl font-bold mb-6">Ultimate Paint Protection</h2>
               <p className="text-gray-600 mb-4">
-                Paint Protection Film (PPF) is a thermoplastic urethane film applied to painted surfaces of a new or used vehicle to protect the paint from stone chips, bug splatters, and minor abrasions. This virtually invisible film maintains the original appearance of your vehicle while providing an additional layer of protection.
+                XPEL's Paint Protection Film is a clear, thermoplastic urethane film that protects your vehicle's paint from rock chips, bug damage, road debris, and minor abrasions. This virtually invisible film maintains your car's appearance while providing peace of mind.
               </p>
-              <p className="text-gray-600 mb-4">
-                Our premium XPEL Ultimate Plus and XPEL Stealth films are designed with remarkable self-healing properties. When exposed to heat, minor scratches and swirl marks disappear, keeping your vehicle looking pristine. The film's advanced adhesive ensures it won't yellow or discolor over time, providing years of protection.
+              <p className="text-gray-600 mb-6">
+                Whether you're looking to protect high-impact areas or want complete vehicle coverage, our certified installers ensure precise fitment and optimal protection for your specific needs.
               </p>
-              <p className="text-gray-600">
-                Unlike ceramic coatings that provide a chemical barrier, PPF offers physical protection against impacts and road debris, making it the ideal solution for high-impact areas of your vehicle such as the front bumper, hood, and mirror caps.
-              </p>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <Check className="text-primary mr-2" />
+                  <span className="text-gray-600">Self-healing technology</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="text-primary mr-2" />
+                  <span className="text-gray-600">10-year warranty</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="text-primary mr-2" />
+                  <span className="text-gray-600">Preserves resale value</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="text-primary mr-2" />
+                  <span className="text-gray-600">Professional installation</span>
+                </div>
+              </div>
             </motion.div>
+            
             <motion.div 
               className="md:w-1/2"
               initial={{ opacity: 0, x: 20 }}
@@ -64,11 +86,19 @@ const PPF = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <img 
-                src="https://images.unsplash.com/photo-1611821658059-b17c7d097454?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                alt="Paint Protection Film Installation" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+              <div className="relative">
+                <img 
+                  src={matteBlackMercedes} 
+                  alt="Matte Black Mercedes with PPF Protection" 
+                  className="rounded-lg shadow-lg w-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end">
+                  <div className="p-6 text-white">
+                    <p className="font-heading font-semibold">Featured: Matte Black Mercedes</p>
+                    <p className="text-sm opacity-90">Protected with XPEL Stealth PPF</p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -226,11 +256,18 @@ const PPF = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <img 
-                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="XPEL Ultimate Plus Film" 
-                className="w-full h-56 object-cover"
-              />
+              <div className="relative h-56">
+                <img 
+                  src={ppfInstallation}
+                  alt="XPEL Ultimate Plus Film Installation" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <p className="text-white text-sm font-medium">XPEL Ultimate Plus Black PPF</p>
+                  </div>
+                </div>
+              </div>
               <div className="p-6">
                 <h3 className="font-heading text-2xl font-bold mb-2">XPEL Ultimate Plus</h3>
                 <p className="text-gray-600 mb-4">
@@ -263,11 +300,18 @@ const PPF = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <img 
-                src="https://images.unsplash.com/photo-1606577924006-27637bca2e0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="XPEL Stealth Film" 
-                className="w-full h-56 object-cover"
-              />
+              <div className="relative h-56">
+                <img 
+                  src={matteBlackRivian}
+                  alt="Matte Black Rivian with XPEL Stealth" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <p className="text-white text-sm font-medium">Featured: Matte Black Rivian R1T</p>
+                  </div>
+                </div>
+              </div>
               <div className="p-6">
                 <h3 className="font-heading text-2xl font-bold mb-2">XPEL Stealth</h3>
                 <p className="text-gray-600 mb-4">
@@ -315,12 +359,23 @@ const PPF = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <motion.div 
-              className="bg-ppf-pattern bg-cover bg-center rounded-lg overflow-hidden h-96 md:h-auto"
+              className="relative rounded-lg overflow-hidden h-96 md:h-auto"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-            ></motion.div>
+            >
+              <img 
+                src={xpel} 
+                alt="XPEL Paint Protection Film" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                <div className="absolute bottom-0 left-0 p-4">
+                  <p className="text-white text-sm font-medium">XPEL Paint Protection Film</p>
+                </div>
+              </div>
+            </motion.div>
             
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -418,9 +473,32 @@ const PPF = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src={ppfImage1} alt="PPF Installation Process" className="rounded-lg shadow-md h-48 w-full object-cover" />
-                  <img src={ppfImage2} alt="PPF Installation Detail" className="rounded-lg shadow-md h-48 w-full object-cover" />
-                  <img src={ppfImage3} alt="PPF Final Result" className="rounded-lg shadow-md h-48 w-full object-cover" />
+                  <div className="relative">
+                    <img 
+                      src={ppfInstallation} 
+                      alt="PPF Installation Process" 
+                      className="rounded-lg shadow-md w-full h-[300px] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end">
+                      <div className="p-6 text-white">
+                        <p className="font-heading font-semibold">Professional PPF Installation</p>
+                        <p className="text-sm opacity-90">Precise application by certified technicians</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <img 
+                      src={ppfInstallation2} 
+                      alt="PPF Installation Process Detail" 
+                      className="rounded-lg shadow-md w-full h-[300px] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end">
+                      <div className="p-6 text-white">
+                        <p className="font-heading font-semibold">Detailed Application Process</p>
+                        <p className="text-sm opacity-90">Meticulous attention to every detail</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </div>

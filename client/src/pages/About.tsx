@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import detailingImage from "@assets/images/detailing_process/detailing_process1.png";
 
 const About = () => {
   const teamMembers = [
@@ -92,6 +93,7 @@ const About = () => {
                 Today, we offer a comprehensive range of mobile services, from essential maintenance details to premium paint correction, ceramic coatings, and paint protection film. We come to you with all the necessary equipment to deliver professional-quality results right at your location.
               </p>
             </motion.div>
+            
             <motion.div 
               className="md:w-1/2"
               initial={{ opacity: 0, x: 20 }}
@@ -100,8 +102,8 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1596041641827-9ecb108b9114?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                alt="Fairway Detailing Shop" 
+                src={detailingImage}
+                alt="Professional detailing in action" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </motion.div>

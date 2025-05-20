@@ -5,6 +5,7 @@ export interface PPFPackageType {
   filmType: string;
   filmDetails: string;
   features: string[];
+  isHighlighted?: boolean;
 }
 
 export const ppfPackages: PPFPackageType[] = [
