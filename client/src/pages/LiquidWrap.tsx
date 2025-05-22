@@ -350,7 +350,6 @@ const LiquidWrap = () => {
                 viewport={{ once: true }}
               >
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="https://images.unsplash.com/photo-1626060893257-2ebbf5139e57?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Application Process" className="rounded-lg shadow-md w-full h-auto" />
                   <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Liquid Wrap Detail" className="rounded-lg shadow-md w-full h-auto" />
                 </div>
               </motion.div>
