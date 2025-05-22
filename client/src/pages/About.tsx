@@ -2,29 +2,9 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import detailingImage from "@assets/images/detailing_process/detailing_process1.png";
+import jarettPortrait from "@assets/images/bio/jarett_portrait.jpg";
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: "Member 1",
-      position: "Founder & Head Detailer",
-      bio: "With over 15 years of experience in automotive detailing, Member 1 founded Fairway Detailing with a vision to provide exceptional service to car enthusiasts in Ohio.",
-      image: ""
-    },
-    {
-      name: "Member 2",
-      position: "Ceramic Coating Specialist",
-      bio: "Member 2 is our certified ceramic coating expert with specialized training in Gtechniq applications. He's known for her meticulous prep work and flawless coating results.",
-      image: ""
-    },
-    {
-      name: "Member 3",
-      position: "Paint Protection Expert",
-      bio: "Member 3 specializes in PPF installation and is certified by XPEL. His precision cutting and installation techniques ensure seamless protection for your vehicle.",
-      image: ""
-    }
-  ];
-
   const staggerChildren = {
     hidden: { opacity: 0 },
     visible: {
@@ -101,11 +81,13 @@ const About = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <img 
-                src={detailingImage}
-                alt="Professional detailing in action" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+              <div className="flex justify-center">
+                <img 
+                  src={jarettPortrait}
+                  alt="Jarett, Founder of Fairway Detailing" 
+                  className="rounded-lg shadow-lg w-full max-w-[400px] h-auto object-cover aspect-[4/5]"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -172,47 +154,6 @@ const About = () => {
               <h3 className="font-heading font-bold text-xl mb-2">Innovation</h3>
               <p className="text-gray-600">We continuously explore new products, techniques, and technologies to offer the best solutions for your vehicle.</p>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Our Team */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-heading text-3xl font-bold mb-4">Meet Our Team</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Our experienced team of detailing professionals is passionate about cars and committed to delivering exceptional results.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
-            variants={staggerChildren}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            {teamMembers.map((member, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-                variants={childVariants}
-              >
-                <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
-                <div className="p-6">
-                  <h3 className="font-heading font-bold text-xl mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.position}</p>
-                  <p className="text-gray-600">{member.bio}</p>
-                </div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>

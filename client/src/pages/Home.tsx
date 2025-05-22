@@ -17,6 +17,7 @@ import detailingProcess from "@assets/images/detailing_process/detailing_process
 import carWashing from "@assets/images/services/essential_detail1.png";
 import mercedes from "@assets/images/services/showroom_detail1.jpg";
 import interior from "@assets/images/services/premium_refresh1.png";
+import mobileDetailing from "@assets/images/mobile_detailing/mobile_detailing.png";
 // Gallery transformation images - using the same images as in the Gallery page
 import beforeExterior from "@assets/beforeAfter_images/before1.webp";
 import afterExterior from "@assets/beforeAfter_images/after1.webp";
@@ -198,34 +199,58 @@ const Home = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
-      <section className="py-16">
+      {/* Mobile Detailing Section */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-heading text-3xl font-bold mb-4">What Our Customers Say</h2>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                Don't just take our word for it. Here's what our satisfied customers have to say about their experience with Fairway Detailing.
-              </p>
-            </motion.div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                content={testimonial.content}
-                author={testimonial.author}
-                location={testimonial.location}
-                rating={testimonial.rating}
-                index={index}
-              />
-            ))}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="order-2 lg:order-1"
+              >
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="h-[500px] overflow-hidden">
+                    <ResponsiveImage
+                      src={mobileDetailing}
+                      alt="Mobile Detailing Service"
+                      className="w-full h-full object-cover object-[center_80%] hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="order-1 lg:order-2"
+              >
+                <h2 className="font-heading text-3xl font-bold mb-6">Mobile Detailing Service</h2>
+                <div className="relative mb-8">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-200"></div>
+                  </div>
+                  <div className="relative flex justify-start">
+                    <span className="bg-gray-50 pr-4 text-sm text-gray-500">CONVENIENCE AT YOUR DOORSTEP</span>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                  At Fairway Detailing Company, we bring the shine and cleanliness directly to your doorstep. Our expert team is dedicated to providing top-notch detailing services that transform your vehicle, making it look and feel brand new. Whether you need a thorough interior cleaning, exterior polishing, or both, we've got you covered.
+                </p>
+                <Link 
+                  href="/contact" 
+                  className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-4 rounded-md transition-colors inline-flex items-center gap-3"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span>Book Mobile Service</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
