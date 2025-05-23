@@ -118,7 +118,7 @@ const Home = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <ResponsiveImage 
-                    src={service.imageSrc} 
+                    src={typeof service.imageSrc === 'string' ? service.imageSrc : (service.previewImage || service.imageSrc[0])} 
                     alt={service.title} 
                     className="w-full h-full hover:scale-105 transition-transform duration-500"
                   />

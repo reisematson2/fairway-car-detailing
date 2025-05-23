@@ -1,7 +1,8 @@
 // Import service images
 import essentialDetailImg from "@assets/images/services/essential_detail1.png";
 import premiumRefreshImg from "@assets/images/services/premium_refresh1.png";
-import showroomDetailImg from "@assets/images/services/showroom_detail1.jpg";
+import showroomDetailImg1 from "@assets/images/services/showroom_detail1.jpg";
+import showroomDetailImg2 from "@assets/images/services/showroom_detail2.jpeg";
 
 export interface ServiceType {
   id: string;
@@ -20,7 +21,8 @@ export interface ServiceType {
       items: string[];
     };
   };
-  imageSrc: string;
+  imageSrc: string | string[];
+  previewImage?: string; // Optional preview image for home page
 }
 
 export const services: ServiceType[] = [
@@ -119,7 +121,8 @@ export const services: ServiceType[] = [
         ]
       }
     },
-    imageSrc: showroomDetailImg
+    imageSrc: [showroomDetailImg1, showroomDetailImg2],
+    previewImage: showroomDetailImg1
   }
 ];
 

@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
-import ResponsiveImage from "./ResponsiveImage";
+import ImageGallery from "./ImageGallery";
 
 interface ServiceItem {
   title: string;
@@ -18,7 +18,7 @@ interface ServicePackageProps {
     exterior: ServiceItem;
     interior: ServiceItem;
   }
-  imageSrc: string;
+  imageSrc: string | string[];
   isActive?: boolean;
 }
 
@@ -32,6 +32,11 @@ const ServicePackage = ({
   imageSrc,
   isActive = false,
 }: ServicePackageProps) => {
+  // Convert imageSrc to array format for ImageGallery
+  const images = Array.isArray(imageSrc)
+    ? imageSrc.map(src => ({ src, alt: `${title} Detailing Package` }))
+    : [{ src: imageSrc, alt: `${title} Detailing Package` }];
+
   return (
     <motion.div 
       id={`content-${id}`} 
@@ -42,11 +47,9 @@ const ServicePackage = ({
     >
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/3">
-          <ResponsiveImage 
-            src={imageSrc} 
-            alt={`${title} Detailing Package`} 
+          <ImageGallery 
+            images={images}
             className="h-full w-full"
-            objectFit="cover" 
           />
         </div>
         <div className="lg:w-2/3 p-6 lg:p-8">

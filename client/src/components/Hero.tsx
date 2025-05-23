@@ -42,57 +42,37 @@ const Hero = () => {
               transition={{ duration: 0.5 }}   /* Animation timing */
             >
               {/* Main heading - responsive sizing */}
-              <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold mb-3 sm:mb-4 text-black text-center lg:text-left">Reasons to Call Fairway Detailing Company</h2>
+              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 sm:mb-8 text-black text-center lg:text-left">Reasons to Call Fairway Detailing Company</h2>
               
               {/* Value proposition bullet points list */}
-              <ul className="space-y-2 mb-6 lg:mb-0 text-left">
+              <ul className="space-y-6 mb-8 lg:mb-0 text-left">
                 {/* Value point 1: Preserve Vehicle Value */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
+                <li className="flex items-start gap-4">
+                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">No One Will Beat Our Pricing & Quality</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">No One Will Beat Our Pricing & Quality</h3>
+                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
                       High quality details starting as low as $130.
                     </p>
                   </div>
                 </li>
                 {/* Value point 2: Time-Saving and Hassle-Free */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
+                <li className="flex items-start gap-4">
+                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Time-Saving and Hassle-Free</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">Utilize Our Mobile Detailing or Drop Your Vehicle Off</h3>
+                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
                       Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
                     </p>
                   </div>
                 </li>
                 {/* Value point 3: One-Stop Shop */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
+                <li className="flex items-start gap-4">
+                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">One-Stop Shop</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
+                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">One-Stop Shop</h3>
+                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
                       Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
-                    </p>
-                  </div>
-                </li>
-                {/* Value point 4: Proven Experience */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Proven Experience</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
-                      Over 10 years of hands-on experience and proven results in automotive detailing.
-                    </p>
-                  </div>
-                </li>
-                {/* Value point 5: Locally Owned and Trusted */}
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Locally Owned and Trusted</h3>
-                    <p className="text-gray-200 text-xs sm:text-sm md:text-base">
-                      Family-operated in Northeast Ohio—personalized service where we treat every detail like it's for one of our own.
                     </p>
                   </div>
                 </li>
