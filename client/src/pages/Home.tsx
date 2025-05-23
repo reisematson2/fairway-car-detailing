@@ -18,11 +18,16 @@ import carWashing from "@assets/images/services/essential_detail1.png";
 import mercedes from "@assets/images/services/showroom_detail1.jpg";
 import interior from "@assets/images/services/premium_refresh1.png";
 import mobileDetailing from "@assets/images/mobile_detailing/mobile_detailing.png";
+import mobileDetailing2 from "@assets/images/mobile_detailing/mobile_detailing2.jpg";
 // Gallery transformation images - using the same images as in the Gallery page
 import beforeExterior from "@assets/beforeAfter_images/before1.webp";
 import afterExterior from "@assets/beforeAfter_images/after1.webp";
 import beforeInterior from "@assets/beforeAfter_images/before2.png";
 import afterInterior from "@assets/beforeAfter_images/after2.png";
+import beforeImage3 from "@assets/beforeAfter_images/before3.jpg";
+import afterImage3 from "@assets/beforeAfter_images/after3.jpg";
+import beforeImage4 from "@assets/beforeAfter_images/before4.png";
+import afterImage4 from "@assets/beforeAfter_images/after4.png";
 
 const Home = () => {
   const processSteps = [
@@ -214,7 +219,7 @@ const Home = () => {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <div className="h-[500px] overflow-hidden">
                     <ResponsiveImage
-                      src={mobileDetailing}
+                      src={mobileDetailing2}
                       alt="Mobile Detailing Service"
                       className="w-full h-full object-cover object-[center_80%] hover:scale-105 transition-transform duration-500"
                     />
@@ -310,6 +315,46 @@ const Home = () => {
               <div className="p-4">
                 <h3 className="font-heading text-lg font-bold">Interior Deep Clean</h3>
                 <p className="text-gray-600 text-sm">Complete interior transformation with our Premium Refresh package, including steam cleaning and leather conditioning.</p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <BeforeAfterImage 
+                beforeSrc={beforeImage3}
+                afterSrc={afterImage3}
+                beforeAlt="Before Professional Detail"
+                afterAlt="After Professional Detail"
+                height="h-48"
+              />
+              <div className="p-4">
+                <h3 className="font-heading text-lg font-bold">Professional Detail</h3>
+                <p className="text-gray-600 text-sm">Complete exterior transformation showcasing our attention to detail and professional results.</p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <BeforeAfterImage 
+                beforeSrc={beforeImage4}
+                afterSrc={afterImage4}
+                beforeAlt="Before Premium Detail"
+                afterAlt="After Premium Detail"
+                height="h-48"
+              />
+              <div className="p-4">
+                <h3 className="font-heading text-lg font-bold">Premium Detail</h3>
+                <p className="text-gray-600 text-sm">Another stunning transformation showing the quality of our premium detailing service.</p>
               </div>
             </motion.div>
           </div>

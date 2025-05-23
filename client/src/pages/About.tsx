@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import detailingImage from "@assets/images/detailing_process/detailing_process1.png";
 import jarettPortrait from "@assets/images/bio/jarett_portrait.jpg";
+import bioFamily from "@assets/images/bio/bio_family.jpg";
 
 const About = () => {
   const staggerChildren = {
@@ -64,13 +65,13 @@ const About = () => {
             >
               <h2 className="font-heading text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Fairway Detailing was founded in 2015 with a simple mission: to provide exceptional automotive care that goes beyond the standard car wash. As car enthusiasts ourselves, we understand the connection people have with their vehicles and the importance of keeping them in pristine condition.
+                Jarett Smetana is the founder of Fairway Detailing, a mobile detailing company built on a lifelong passion for cars and entrepreneurship. His journey began with detailing his mom's Ford Expedition as a kid, and grew into a business through dedication, online training, and countless hours honing his skills on friends' and family's vehicles.
               </p>
               <p className="text-gray-600 mb-4">
-                What started as a small mobile detailing service has grown into one of Ohio's premier mobile detailing companies. Our growth has been driven by word-of-mouth from satisfied customers who appreciate our convenience, attention to detail, and commitment to quality.
+                Jarett believes in building trust through quality work and personal relationships. Whether it's a daily driver, work truck, or supercar, his goal is to deliver that "right off the lot" feeling—conveniently at your home, workplace, or wherever you need service.
               </p>
               <p className="text-gray-600 mb-4">
-                Today, we offer a comprehensive range of mobile services, from essential maintenance details to premium paint correction, ceramic coatings, and paint protection film. We come to you with all the necessary equipment to deliver professional-quality results right at your location.
+                With Fairway Detailing, Jarett brings professionalism, passion, and precision to every vehicle he touches.
               </p>
             </motion.div>
             
@@ -158,6 +159,40 @@ const About = () => {
               <h3 className="font-heading font-bold text-xl mb-2">Innovation</h3>
               <p className="text-gray-600">We continuously explore new products, techniques, and technologies to offer the best solutions for your vehicle.</p>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Family Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-heading text-3xl font-bold mb-4">Family-Owned Business</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              At Fairway Detailing, we treat every vehicle as if it were our own, bringing family values and dedication to every detail.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src={bioFamily} 
+                alt="The Fairway Detailing Family" 
+                className="w-full h-auto max-h-[400px] object-cover object-center"
+              />
+            </div>
           </motion.div>
         </div>
       </section>

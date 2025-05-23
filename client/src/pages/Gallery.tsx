@@ -8,10 +8,10 @@ import beforeImage1 from "@assets/beforeAfter_images/before1.webp";
 import afterImage1 from "@assets/beforeAfter_images/after1.webp";
 import beforeImage2 from "@assets/beforeAfter_images/before2.png";
 import afterImage2 from "@assets/beforeAfter_images/after2.png";
-import beforeImage3 from "@assets/images/services/premium_refresh1.png";
-import afterImage3 from "@assets/images/services/ceramic_coating2.jpg";
-import beforeImage4 from "@assets/images/services/showroom_detail1.jpg";
-import afterImage4 from "@assets/images/services/ppf1.png";
+import beforeImage3 from "@assets/beforeAfter_images/before3.jpg";
+import afterImage3 from "@assets/beforeAfter_images/after3.jpg";
+import beforeImage4 from "@assets/beforeAfter_images/before4.png";
+import afterImage4 from "@assets/beforeAfter_images/after4.png";
 
 interface TransformationItemProps {
   id: number;
@@ -39,6 +39,22 @@ const transformations: TransformationItemProps[] = [
     afterImage: afterImage2,
     tags: ["Interior Detail", "Steam Cleaning", "Leather Treatment"]
   },
+  {
+    id: 3,
+    title: "Professional Detail",
+    description: "Complete exterior transformation showcasing our attention to detail and professional results.",
+    beforeImage: beforeImage3,
+    afterImage: afterImage3,
+    tags: ["Exterior Detail", "Paint Correction", "Professional Results"]
+  },
+  {
+    id: 4,
+    title: "Premium Detail",
+    description: "Another stunning transformation showing the quality of our premium detailing service.",
+    beforeImage: beforeImage4,
+    afterImage: afterImage4,
+    tags: ["Interior Detail", "Deep Cleaning", "Professional Results"]
+  }
 ];
 
 const TransformationItem = ({ item }: { item: TransformationItemProps }) => {
