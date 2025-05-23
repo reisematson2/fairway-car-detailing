@@ -81,12 +81,16 @@ const About = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="flex justify-center">
+              <div className="flex flex-col items-center">
                 <img 
                   src={jarettPortrait}
                   alt="Jarett, Founder of Fairway Detailing" 
                   className="rounded-lg shadow-lg w-full max-w-[400px] h-auto object-cover aspect-[4/5]"
                 />
+                <div className="mt-4 text-center">
+                  <p className="font-heading font-bold text-lg text-gray-900">Jarett Smetana</p>
+                  <p className="text-primary font-medium">Owner/Lead Detailer</p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -174,25 +178,26 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="flex flex-col md:flex-row items-start gap-8 max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-stretch gap-8 max-w-6xl mx-auto min-h-[600px]">
             <motion.div 
-              className="md:w-1/3"
+              className="flex-1 md:w-1/3"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="bg-white p-8 rounded-lg shadow-md h-full flex flex-col">
                 <h3 className="font-heading text-xl font-bold mb-6">Contact Information</h3>
                 
-                <div className="space-y-4">
+                <div className="space-y-4 flex-grow">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4">
                       <MapPin className="text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-heading font-semibold mb-1">Address</h4>
-                      <p className="text-gray-600">123 Detail Ave<br />Cleveland, OH 44115</p>
+                      <p className="font-heading font-semibold">Address</p>
+                      <p className="text-gray-600">13857 Hall Rd.</p>
+                      <p className="text-gray-600">Chardon, OH 44024</p>
                     </div>
                   </div>
                   
@@ -201,8 +206,8 @@ const About = () => {
                       <Phone className="text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-heading font-semibold mb-1">Phone</h4>
-                      <p className="text-gray-600">(555) 123-4567</p>
+                      <p className="font-heading font-semibold">Phone</p>
+                      <p className="text-gray-600">440-635-6990</p>
                     </div>
                   </div>
                   
@@ -210,24 +215,24 @@ const About = () => {
                     <div className="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4">
                       <Mail className="text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-heading font-semibold mb-1">Email</h4>
-                      <p className="text-gray-600">info@fairwaydetailing.com</p>
+                    <div className="min-w-0">
+                      <p className="font-heading font-semibold">Email</p>
+                      <p className="text-gray-600 break-words">fairwaydetailingcompany@gmail.com</p>
                     </div>
                   </div>
                 </div>
                 
                 <div className="mt-8">
-                  <h4 className="font-heading font-semibold mb-3">Social Media</h4>
+                  <h4 className="font-heading font-semibold mb-3">Follow Us</h4>
                   <div className="flex space-x-4">
-                    <a href="#" className="bg-primary bg-opacity-10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors">
-                      <Facebook className="h-5 w-5" />
+                    <a href="#" className="bg-primary hover:bg-primary/90 text-white p-2 rounded-full transition-colors">
+                      <Facebook className="w-5 h-5" />
                     </a>
-                    <a href="#" className="bg-primary bg-opacity-10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors">
-                      <Instagram className="h-5 w-5" />
+                    <a href="#" className="bg-primary hover:bg-primary/90 text-white p-2 rounded-full transition-colors">
+                      <Instagram className="w-5 h-5" />
                     </a>
-                    <a href="#" className="bg-primary bg-opacity-10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors">
-                      <Twitter className="h-5 w-5" />
+                    <a href="#" className="bg-primary hover:bg-primary/90 text-white p-2 rounded-full transition-colors">
+                      <Twitter className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
@@ -240,19 +245,18 @@ const About = () => {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div 
-              className="md:w-2/3"
+              className="flex-1 md:w-2/3"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px]">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95283.46745674586!2d-81.74734245!3d41.4996562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ef2ee3686b2d%3A0xed04cb55f7621842!2sCleveland%2C%20OH!5e0!3m2!1sen!2sus!4v1684274278580!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="100%" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.0647814453584!2d-81.19724562342565!3d41.55736828719883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831076414e0c5b1%3A0x1d0c5bc4c15bc307!2s13857%20Hall%20Rd%2C%20Chardon%2C%20OH%2044024!5e0!3m2!1sen!2sus!4v1709764005034!5m2!1sen!2sus"
+                  className="w-full h-full min-h-[600px]"
                   style={{ border: 0 }} 
                   allowFullScreen 
                   loading="lazy" 

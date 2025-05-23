@@ -172,8 +172,11 @@ const Navigation = () => {
             )}
           </div>
           
-          <a href="tel:5551234567" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-3 lg:px-5 py-1 lg:py-2 rounded-md transition-colors flex items-center text-sm lg:text-base whitespace-nowrap">
-            <Phone className="mr-1 lg:mr-2 h-3 lg:h-4 w-3 lg:w-4" /> (555) 123-4567
+          <a 
+            href="tel:440-635-6990" 
+            className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-3 lg:px-5 py-1 lg:py-2 rounded-md transition-colors flex items-center text-sm lg:text-base whitespace-nowrap"
+          >
+            <Phone className="mr-1 lg:mr-2 h-3 lg:h-4 w-3 lg:w-4" /> 440-635-6990
           </a>
         </div>
 
@@ -250,12 +253,12 @@ const Navigation = () => {
               )}
             </div>
             
-            <a 
-              href="tel:5551234567" 
-              className="block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md text-center transition-colors"
+            <a
+              href="tel:440-635-6990"
+              className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md inline-flex items-center justify-center transition-colors"
               onClick={closeMobileMenu}
             >
-              <Phone className="inline-block mr-2 h-4 w-4" /> (555) 123-4567
+              <Phone className="mr-2 h-4 w-4" /> 440-635-6990
             </a>
           </div>
         </div>

@@ -348,8 +348,8 @@ const Home = () => {
                 <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="font-heading text-xl font-bold mb-2">Call Us</h3>
                 <p className="mb-4">Speak directly with our detailing experts</p>
-                <a href="tel:5551234567" className="text-primary hover:text-primary/90 font-heading font-bold text-xl">
-                  (555) 123-4567
+                <a href="tel:440-635-6990" className="text-primary hover:text-primary/90 font-heading font-bold text-xl">
+                  440-635-6990
                 </a>
               </div>
               
@@ -357,8 +357,8 @@ const Home = () => {
                 <Mail className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="font-heading text-xl font-bold mb-2">Email Us</h3>
                 <p className="mb-4">Send us your questions or service requests</p>
-                <a href="mailto:info@fairwaydetailing.com" className="text-primary hover:text-primary/90 font-heading font-bold">
-                  info@fairwaydetailing.com
+                <a href="mailto:fairwaydetailingcompany@gmail.com" className="text-primary hover:text-primary/90 font-heading font-bold">
+                  fairwaydetailingcompany@gmail.com
                 </a>
               </div>
             </div>

@@ -112,14 +112,14 @@ const Hero = () => {
                 <div className="mb-3 sm:mb-4 space-y-2">
                   <div className="flex items-center">
                     <Phone className="h-4 w-4 mr-2 text-[#5CA424]" />
-                    <a href="tel:5551234567" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
-                      (555) 123-4567
+                    <a href="tel:440-635-6990" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
+                      440-635-6990
                     </a>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-4 w-4 mr-2 text-[#5CA424]" />
-                    <a href="mailto:info@fairwaydetailing.com" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
-                      info@fairwaydetailing.com
+                    <a href="mailto:fairwaydetailingcompany@gmail.com" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
+                      fairwaydetailingcompany@gmail.com
                     </a>
                   </div>
                 </div>

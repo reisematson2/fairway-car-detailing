@@ -49,12 +49,21 @@ const Footer = () => {
             <h4 className="font-heading font-bold text-lg mb-4">Contact Us</h4>
             <div className="space-y-3 mb-6">
               <p className="text-gray-400">
-                <span className="font-semibold text-white">Phone:</span><br />
-                (555) 123-4567
+                <span className="font-semibold text-white">Phone:</span>
+                <br />
+                440-635-6990
               </p>
               <p className="text-gray-400">
-                <span className="font-semibold text-white">Email:</span><br />
-                info@fairwaydetailing.com
+                <span className="font-semibold text-white">Email:</span>
+                <br />
+                fairwaydetailingcompany@gmail.com
+              </p>
+              <p className="text-gray-400">
+                <span className="font-semibold text-white">Address:</span>
+                <br />
+                13857 Hall Rd.
+                <br />
+                Chardon, OH 44024
               </p>
             </div>
             <div className="flex space-x-4">

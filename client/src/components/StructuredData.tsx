@@ -57,14 +57,14 @@ export const BusinessStructuredData = () => {
     logo: "https://fairwaydetailing.com/logo.png",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Detail Ave",
-      addressLocality: "Cleveland",
+      streetAddress: "13857 Hall Rd.",
+      addressLocality: "Chardon",
       addressRegion: "OH",
-      postalCode: "44115",
+      postalCode: "44024",
       addressCountry: "US"
     },
-    telephone: "(555) 123-4567",
-    email: "info@fairwaydetailing.com",
+    telephone: "440-635-6990",
+    email: "fairwaydetailingcompany@gmail.com",
     sameAs: [
       "https://facebook.com/fairwaydetailing",
       "https://instagram.com/fairwaydetailing"

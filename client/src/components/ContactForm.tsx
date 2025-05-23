@@ -27,21 +27,21 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const ContactInfo = () => {
-  const contactItems = [
+  const contactInfo = [
     {
       icon: <MapPin className="text-primary" />,
-      title: "Location",
-      details: ["123 Detail Ave", "Columbus, OH 43215"]
+      title: "Address",
+      details: ["13857 Hall Rd.", "Chardon, OH 44024"]
     },
     {
       icon: <Phone className="text-primary" />,
       title: "Phone",
-      details: ["(555) 123-4567"]
+      details: ["440-635-6990"]
     },
     {
       icon: <Mail className="text-primary" />,
       title: "Email",
-      details: ["info@fairwaydetailing.com"]
+      details: ["fairwaydetailingcompany@gmail.com"]
     }
   ];
 
@@ -61,15 +61,15 @@ const ContactInfo = () => {
       <h3 className="font-heading font-bold text-xl mb-6">Get In Touch</h3>
       
       <div className="space-y-4">
-        {contactItems.map((item, index) => (
+        {contactInfo.map((item, index) => (
           <div key={index} className="flex items-start">
             <div className="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4">
               {item.icon}
             </div>
-            <div>
+            <div className="min-w-0 flex-1">
               <h4 className="font-heading font-semibold mb-1">{item.title}</h4>
               {item.details.map((detail, idx) => (
-                <p key={idx} className="text-gray-600">{detail}</p>
+                <p key={idx} className="text-gray-600 break-words">{detail}</p>
               ))}
             </div>
           </div>
