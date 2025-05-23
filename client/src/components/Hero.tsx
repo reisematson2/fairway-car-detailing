@@ -50,9 +50,9 @@ const Hero = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-black mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">Preserve Vehicle Value</h3>
+                    <h3 className="font-heading font-bold text-sm sm:text-base md:text-lg text-white">No One Will Beat Our Pricing & Quality</h3>
                     <p className="text-gray-200 text-xs sm:text-sm md:text-base">
-                      Regular detailing helps maintain the value of your car—preventing damage from dirt, UV rays, and interior stains. Ideal for lease returns or future resale!
+                      High quality details starting as low as $130.
                     </p>
                   </div>
                 </li>
