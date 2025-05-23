@@ -253,7 +253,7 @@ const Navigation = () => {
               )}
             </div>
             
-            <a
+            <a 
               href="tel:440-635-6990"
               className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-5 py-2 rounded-md inline-flex items-center justify-center transition-colors"
               onClick={closeMobileMenu}

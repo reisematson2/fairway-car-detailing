@@ -39,14 +39,17 @@ const About = () => {
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
         </div>
         <div className="relative py-24">
-          <div className="container mx-auto px-4 text-white">
+          <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+              className="max-w-4xl mx-auto text-center"
             >
-              <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">About Fairway Detailing</h1>
-              <p className="text-xl max-w-2xl">Delivering premium auto detailing services with attention to detail and customer satisfaction since 2015.</p>
+              <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">Our Mission</h1>
+              <p className="text-xl md:text-2xl leading-relaxed">
+                "At Fairway Detailing Company, our mission is to provide top-quality detailing with care, precision, and the best products available. We're all about personalized customer service, attention to detail, and making sure every customer drives away satisfied. Whether restoring a vehicle's shine or protecting its finish, we take pride in being your trusted choice for automotive detailing."
+              </p>
             </motion.div>
           </div>
         </div>

@@ -1,120 +1,64 @@
 /**
  * Hero.tsx
  * 
- * Hero section component for the homepage featuring key value propositions
- * and a contact card for quick conversions. Includes animations and responsive
- * design for various screen sizes.
+ * Hero section component for the homepage featuring a video background
+ * and simplified content structure.
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { Phone, Mail, CheckCircle } from "lucide-react";
+import heroVideo from "@assets/videos/hero_background.mp4";
 
-/**
- * Hero component that displays at the top of the homepage
- * Contains:
- * - Value proposition bullet points
- * - Contact information card
- * - Call-to-action buttons
- * - Animated entrance effects
- * 
- * @returns JSX for the hero section
- */
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-[#5CA424] to-[#2d4e15] text-white overflow-hidden">
-      {/* Background pattern with noise texture and decorative elements */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(/noise.svg)' }}>
-        {/* Decorative blur effect in top corner */}
-        <div className="absolute -top-24 -right-24 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-white/10 blur-3xl"></div>
-        {/* Thin gradient line at bottom for visual separation */}
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+    <section className="relative h-[95vh] overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          disablePictureInPicture
+          className="absolute w-full h-full object-cover object-center"
+          style={{ objectPosition: "center 10%" }}
+          controlsList="nodownload nofullscreen noremoteplayback"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       </div>
-      {/* Main content container with responsive padding */}
-      <div className="relative py-8 sm:py-10 lg:py-12 px-4 sm:px-6">
-        <div className="container mx-auto">
-          {/* Two-column layout (stacked on mobile, side-by-side on desktop) */}
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-4 lg:gap-8">
-            {/* Left side content - Value propositions */}
+
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center justify-center -mt-[32px]">
+        <div className="container mx-auto px-4">
             <motion.div 
-              className="w-full lg:w-2/3 text-white mt-2 lg:mt-0"
-              initial={{ opacity: 0, y: 20 }}  /* Start invisible and slightly below final position */
-              animate={{ opacity: 1, y: 0 }}   /* Fade in and move up to final position */
-              transition={{ duration: 0.5 }}   /* Animation timing */
-            >
-              {/* Main heading - responsive sizing */}
-              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 sm:mb-8 text-black text-center lg:text-left">Reasons to Call Fairway Detailing Company</h2>
-              
-              {/* Value proposition bullet points list */}
-              <ul className="space-y-6 mb-8 lg:mb-0 text-left">
-                {/* Value point 1: Preserve Vehicle Value */}
-                <li className="flex items-start gap-4">
-                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">No One Will Beat Our Pricing & Quality</h3>
-                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
-                      High quality details starting as low as $130.
-                    </p>
-                  </div>
-                </li>
-                {/* Value point 2: Time-Saving and Hassle-Free */}
-                <li className="flex items-start gap-4">
-                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">Utilize Our Mobile Detailing or Drop Your Vehicle Off</h3>
-                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
-                      Drop off your vehicle, or we'll pick it up—or come to you! Schedule easily via text, email, call, or online booking.
-                    </p>
-                  </div>
-                </li>
-                {/* Value point 3: One-Stop Shop */}
-                <li className="flex items-start gap-4">
-                  <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 text-black mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-white mb-2">One-Stop Shop</h3>
-                    <p className="text-gray-200 text-sm sm:text-base md:text-lg">
-                      Services include interior/exterior detailing, ceramic coating, PPF, odor removal, pet hair removal, and more.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </motion.div>
-            
-            {/* Right side contact card - CTA for quick conversions */}
-            <motion.div
-              className="w-full lg:w-1/3 max-w-sm mx-auto lg:mx-0 my-4 lg:my-0"
-              initial={{ opacity: 0, y: 20 }}  /* Start invisible and below final position */
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <div className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-5">
-                <h3 className="font-heading text-base sm:text-lg font-bold mb-2 text-secondary">Contact Us Today</h3>
-                
-                <div className="mb-3 sm:mb-4 space-y-2">
-                  <div className="flex items-center">
-                    <Phone className="h-4 w-4 mr-2 text-[#5CA424]" />
-                    <a href="tel:440-635-6990" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
-                      440-635-6990
-                    </a>
-                  </div>
-                  <div className="flex items-center">
-                    <Mail className="h-4 w-4 mr-2 text-[#5CA424]" />
-                    <a href="mailto:fairwaydetailingcompany@gmail.com" className="text-[#5CA424] font-medium text-sm hover:underline transition-all">
-                      fairwaydetailingcompany@gmail.com
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Link href="/services" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-1.5 rounded-full transition font-semibold text-center w-full text-xs sm:text-sm">
-                    Our Services
-                  </Link>
-                  <Link href="/booking" className="block bg-[#5CA424] hover:bg-[#4c8e1e] text-white py-1.5 rounded-full transition font-semibold text-center w-full text-xs sm:text-sm">
-                    Book Now
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-          </div>
+            className="max-w-4xl mx-auto text-center text-white"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-100 text-shadow-lg">
+              Fairway Detailing Company
+            </h1>
+            <p className="font-heading text-xl md:text-2xl mb-8 text-gray-200">
+              It's All About a Clean Drive!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/services"
+                className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8 py-4 rounded-md transition-colors text-lg"
+              >
+                Explore Our Services
+              </Link>
+              <Link
+                href="/booking"
+                className="bg-white hover:bg-gray-100 text-primary font-heading font-semibold px-8 py-4 rounded-md transition-colors text-lg"
+              >
+                Book Now
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

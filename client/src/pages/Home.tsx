@@ -12,7 +12,7 @@ import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { blogPosts } from "@/data/blogPosts";
 import { generalFAQs } from "@/data/faqs";
-import { ArrowRight, Phone, Mail } from "lucide-react";
+import { ArrowRight, Phone, Mail, CheckCircle } from "lucide-react";
 import detailingProcess from "@assets/images/detailing_process/detailing_process1.png";
 import carWashing from "@assets/images/services/essential_detail1.png";
 import mercedes from "@assets/images/services/showroom_detail1.jpg";
@@ -57,31 +57,67 @@ const Home = () => {
     <>
       <Hero />
       
-      {/* Our Mission Section */}
-      <section id="mission" className="py-16 bg-white">
+      {/* Reasons to Call Section */}
+      <section id="reasons" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-heading text-3xl font-bold mb-6">Our Mission at Fairway Detailing Company</h2>
+              <h2 className="font-heading text-3xl font-bold mb-6 text-center">Reasons to Choose Fairway Detailing</h2>
               <div className="relative mb-8">
                 <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-200"></div>
-                </div>
-                <div className="relative flex justify-center">
-                  <span className="bg-white px-4 text-sm text-gray-500">QUALITY & CARE</span>
                 </div>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                "At Fairway Detailing Company, our mission is to provide top-quality detailing with care, precision, and the best products available. We're all about personalized customer service, attention to detail, and making sure every customer drives away satisfied. Whether restoring a vehicle's shine or protecting its finish, we take pride in being your trusted choice for automotive detailing."
-              </p>
-              <div className="flex justify-center">
-                <Link href="/services" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 rounded-md transition-colors">
-                  Discover Our Services
+              
+              {/* Value proposition bullet points list */}
+              <ul className="space-y-8">
+                {/* Value point 1: Pricing & Quality */}
+                <li className="flex items-start gap-4">
+                  <div className="bg-primary rounded-full p-2 mt-1 flex-shrink-0">
+                    <CheckCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-xl mb-2">No One Will Beat Our Pricing & Quality</h3>
+                    <p className="text-gray-600 text-lg">
+                      High quality details starting as low as $130. We pride ourselves on delivering exceptional value without compromising on quality.
+                    </p>
+                  </div>
+                </li>
+                
+                {/* Value point 2: Convenience */}
+                <li className="flex items-start gap-4">
+                  <div className="bg-primary rounded-full p-2 mt-1 flex-shrink-0">
+                    <CheckCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-xl mb-2">Flexible Service Options</h3>
+                    <p className="text-gray-600 text-lg">
+                      Choose what works best for you: mobile detailing at your location, drop-off service, or we'll pick up your vehicle. Easy scheduling via text, email, call, or online booking.
+                    </p>
+                  </div>
+                </li>
+                
+                {/* Value point 3: Comprehensive Services */}
+                <li className="flex items-start gap-4">
+                  <div className="bg-primary rounded-full p-2 mt-1 flex-shrink-0">
+                    <CheckCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-xl mb-2">One-Stop Shop</h3>
+                    <p className="text-gray-600 text-lg">
+                      From basic detailing to premium services like ceramic coating and PPF, plus specialized treatments for odor removal and pet hair—we do it all with excellence.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              
+              <div className="mt-8 text-center">
+                <Link href="/services" className="inline-block bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8 py-4 rounded-md transition-colors">
+                  View Our Services
                 </Link>
               </div>
             </motion.div>
