@@ -1,3 +1,7 @@
+import lexusGxWheelTireBefore from "@assets/beforeAfter_images/lexus_gx_wheel_tire_before.png";
+import lexusGxWheelTireAfter from "@assets/beforeAfter_images/lexus_gx_wheel_tire_after.png";
+import vwBumperBugsBefore from "@assets/beforeAfter_images/vw_bumper_bugs_before.jpg";
+import vwBumperBugsAfter from "@assets/beforeAfter_images/vw_bumper_bugs_after.jpg";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
@@ -54,6 +58,22 @@ const transformations: TransformationItemProps[] = [
     beforeImage: beforeImage4,
     afterImage: afterImage4,
     tags: ["Interior Detail", "Deep Cleaning", "Professional Results"]
+  },
+  {
+    id: 5,
+    title: "VW Front Bumper Bug Removal",
+    description: "Before and after results of a VW's front bumper after extensive bug removal and detailing.",
+    beforeImage: vwBumperBugsBefore,
+    afterImage: vwBumperBugsAfter,
+    tags: ["Bug Removal", "Exterior Detail"]
+  }
+  ,{
+    id: 6,
+    title: "Wheel & Tire Deep Clean",
+    description: "Before and after results of a deep clean on wheels and tires, restoring their original look.",
+    beforeImage: lexusGxWheelTireBefore,
+    afterImage: lexusGxWheelTireAfter,
+    tags: ["Tire Cleaning", "Exterior Detailing"]
   }
 ];
 
