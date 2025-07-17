@@ -183,8 +183,9 @@ const Home = () => {
       </section>
       
       {/* Ceramic Coating Preview */}
-      <section className="py-16 bg-ceramic-pattern bg-cover bg-center">
-        <div className="bg-black bg-opacity-75 py-16">
+      <section className="py-16 bg-ceramic-pattern bg-cover bg-center relative">
+        <div className="absolute inset-0 w-full h-full bg-black bg-opacity-40 pointer-events-none z-0" />
+        <div className="relative z-10 py-16">
           <div className="container mx-auto px-4 text-white">
             <div className="text-center mb-12">
               <motion.div
@@ -255,7 +256,7 @@ const Home = () => {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <div className="h-[500px] overflow-hidden">
                     <ResponsiveImage
-                      src={mobileDetailing2}
+                      src={mobileDetailing}
                       alt="Mobile Detailing Service"
                       className="w-full h-full object-cover object-[center_80%] hover:scale-105 transition-transform duration-500"
                     />
