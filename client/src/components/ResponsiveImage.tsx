@@ -59,6 +59,8 @@ const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
         style={{
           objectFit,
           objectPosition,
+          imageRendering: 'auto',
+          filter: 'blur(0.3px) contrast(1.08) brightness(1.04)',
         }}
         decoding="async"
       />
