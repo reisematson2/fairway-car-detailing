@@ -6,7 +6,7 @@
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import heroVideo from "@assets/videos/hero_background.mp4";
+import heroVideo from "@assets/videos/hero_background.mov";
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
           playsInline
           disablePictureInPicture
           className="absolute w-full h-full object-cover object-center"
-          style={{ objectPosition: "center 10%" }}
+          style={{ objectPosition: "center 35%" }}
           controlsList="nodownload nofullscreen noremoteplayback"
         >
           <source src={heroVideo} type="video/mp4" />
